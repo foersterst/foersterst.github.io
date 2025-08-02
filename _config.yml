@@ -54,6 +54,9 @@ social-network-links:
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: deanattali
   github: daattali
+  bluesky: foersterst
+  ORCID: 0000-0001-9639-9009
+  google-scholar: https://scholar.google.com/citations?user=pGhwR30AAAAJ&hl=en&oi=ao
   #twitter: daattali
   #patreon: DeanAttali
   #youtube: "@daattali"
@@ -73,9 +76,9 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-bluesky: foersterst
-ORCID: 0000-0001-9639-9009
-google-scholar: https://scholar.google.com/citations?user=pGhwR30AAAAJ&hl=en&oi=ao
+#bluesky: foersterst
+#ORCID: 0000-0001-9639-9009
+#google-scholar: https://scholar.google.com/citations?user=pGhwR30AAAAJ&hl=en&oi=ao
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
 #  hackerrank: yourname
