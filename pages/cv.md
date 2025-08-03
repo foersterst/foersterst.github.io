@@ -1,1 +1,6 @@
-### This is an example file
+---
+layout: page
+title: Curriculum vitae
+---
+
+Add.
