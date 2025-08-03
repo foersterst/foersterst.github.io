@@ -25,6 +25,7 @@ navbar-links:
   Courses:
     - Teaching:
     - Attendance:
+  Contact me: 
   #About Me: "aboutme"
   #Resources:
     #- Beautiful Jekyll: "https://beautifuljekyll.com"
@@ -56,12 +57,12 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "stenioit@gmail.com"
-  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  #facebook: deanattali
   github: foersterst
-  bluesky: ‪@steniof.bsky.social‬
   ORCID: 0000-0001-9639-9009
   google-scholar: https://scholar.google.com/citations?user=pGhwR30AAAAJ&hl=en&oi=ao
+  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  #facebook: deanattali
+  #bluesky: steniof‬
   #twitter: daattali
   #patreon: DeanAttali
   #youtube: "@daattali"
