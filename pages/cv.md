@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Curriculum vitae
 ---
+
+## Curriculum vitae
 
 Add.
