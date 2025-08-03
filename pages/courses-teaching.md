@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Teaching activities
 ---
+
+## Teaching activities
 
 These are the courses that I've been teaching recently:
 
