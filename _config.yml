@@ -24,7 +24,7 @@ navbar-links:
   CV: pages/cv
   Publications: pages/publications
   Projects: pages/projects
-  Contact me: pages/contactme
+  Contact: pages/contactme
 
 ################
 # --- Logo --- #
