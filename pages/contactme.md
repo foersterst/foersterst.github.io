@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Contact me
 ---
+
+## Contact me
 
 ### Personal e-mail
 stenioit@gmail.com
