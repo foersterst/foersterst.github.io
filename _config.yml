@@ -57,9 +57,9 @@ round-avatar: true
 social-network-links:
   email: "stenioit@gmail.com"
   #rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  bluesky: foersterst
+  #facebook: deanattali
+  github: foersterst
+  bluesky: ‪@steniof.bsky.social‬
   ORCID: 0000-0001-9639-9009
   google-scholar: https://scholar.google.com/citations?user=pGhwR30AAAAJ&hl=en&oi=ao
   #twitter: daattali
@@ -145,11 +145,11 @@ navbar-var-length: false
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 page-col: "#FFFFFF"
-text-col: "#404040"
+text-col: "#f26868" # red
 link-col: "#008AFF"
-hover-col: "#0085A1"
+hover-col: "#6896f2" # blue
 navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
+navbar-text-col: "#68f268" # green
 navbar-border-col: "#DDDDDD"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
