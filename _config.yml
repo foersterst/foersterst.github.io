@@ -23,6 +23,7 @@ author: Stenio I A Foerster
 navbar-links:
   CV: pages/cv
   Publications: pages/publications
+  Projects: pages/projects
   Courses:
     - Teaching: pages/courses-teaching
     - Attended: pages/courses-attended
