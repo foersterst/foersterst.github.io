@@ -21,11 +21,11 @@ author: Stenio I A Foerster
 ###############################################
 
 navbar-links:
-  CV:
-  Publications:
+  CV: pages/cv
+  Publications: pages/publications
   Courses:
-    - Teaching:
-    - Attended:
+    - Teaching: pages/courses-teaching
+    - Attended: pages/courses-attended
   Contact me: pages/contactme
 
 ################
