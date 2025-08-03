@@ -5,11 +5,12 @@ title: ""
 
 ## Curriculum vitae
 
+
 ### Education
-🎓 2010-2015: Bachelor's Degree in Biological Sciences, Universidade Federal Rural de Pernambuco (UFRPE, Brazil)\
-🎓 2018-2020: Master’s Degree in Genetics, Universidade Federal de Pernambuco (UFPE, Brazil)\
-🎓 2020-2025: Doctoral Degree in Zoology (Ecology), University of Tartu, Estonia\
-🏁 2025-2028: Postdoctoral Researcher, Swedish University of Agricultural Sciences
+🎓 2010-2015: Bachelor's Degree in Biological Sciences, Universidade Federal Rural de Pernambuco (UFRPE, Brazil).\
+🎓 2018-2020: Master’s Degree in Genetics, Universidade Federal de Pernambuco (UFPE, Brazil).\
+🎓 2020-2025: Doctoral Degree in Zoology (Ecology), University of Tartu, Estonia.\
+🏁 2025-2028: Postdoctoral Researcher, Swedish University of Agricultural Sciences, Uppsala, Sweden.
 
 ### Courses & Workshops
 📜 2025: Computational Molecular Evolution, Hellenic Centre for Marine Research, Greece, Instructors: Alexandros Stamatakis, Ben Redelings, Bruce Rannalla, Mike May, Maria Anisimova, Ziheng Yang, Adam Leache.\
