@@ -10,7 +10,8 @@
 ############################
 
 # Name of website
-title: Stenio I A Foerster
+title: "Stenio I A Foerster"
+show_downloads: true
 
 # Your name to show in the footer
 author: Stenio I A Foerster
