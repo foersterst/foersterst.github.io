@@ -26,7 +26,7 @@ navbar-links:
   Courses:
     - Teaching:
     - Attended:
-  Contact me: "pages/contactme.md"
+  Contact me: "pages/contactme"
 
 ################
 # --- Logo --- #
