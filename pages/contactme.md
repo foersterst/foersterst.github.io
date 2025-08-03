@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Code
+title: Contact me
 ---
 
 ### Personal e-mail
