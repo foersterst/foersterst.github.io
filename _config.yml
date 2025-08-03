@@ -26,11 +26,6 @@ navbar-links:
     - Teaching:
     - Attendance:
   Contact me: 
-  #About Me: "aboutme"
-  #Resources:
-    #- Beautiful Jekyll: "https://beautifuljekyll.com"
-    #- Learn markdown: "https://www.markdowntutorial.com/"
-  #Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -41,7 +36,7 @@ navbar-links:
 avatar: "/assets/img/stenio_logo1.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
@@ -146,11 +141,11 @@ navbar-var-length: false
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 page-col: "#FFFFFF"
-text-col: "#f26868" # red
+text-col: "#404040"
 link-col: "#008AFF"
-hover-col: "#6896f2" # blue
+hover-col: "#ffbc47"
 navbar-col: "#EAEAEA"
-navbar-text-col: "#68f268" # green
+navbar-text-col: "#f26868"
 navbar-border-col: "#DDDDDD"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
