@@ -15,6 +15,8 @@ title: ""
 
 ### 2024
 
+- Dionisio-da-Silva, W., **Foerster, S. Í. A.**, Gallão, J. E., & Lira, A. F. A. (2024). What’s for dinner? Prey consumption by Neotropical scorpions across contrasting environments. The Journal of Arachnology, 52(1). https://doi.org/10.1636/JoA-S-22-060
+
 - **Foerster, S. Í. A.**, Clarke, J. T., Õunap, E., Teder, T., & Tammaru, T. (2024). A comparative study of body size evolution in moths: Evidence of correlated evolution with feeding and phenology-related traits. Journal of Evolutionary Biology, 37(8), 891–904. https://doi.org/10.1093/jeb/voae072
 
 - **Foerster, S. I. A.**, Javoiš, J., Holm, S., & Tammaru, T. (2024). Predicting insect body masses based on linear measurements: A phylogenetic case study on geometrid moths. Biological Journal of the Linnean Society, 141(1), 71–86. https://doi.org/10.1093/biolinnean/blad069
