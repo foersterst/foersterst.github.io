@@ -13,10 +13,10 @@ title: ""
 🏁 2025-2028: Postdoctoral Researcher, Swedish University of Agricultural Sciences, Uppsala, Sweden.
 
 ### Courses & Workshops
-📜 2025: Computational Molecular Evolution, Hellenic Centre for Marine Research, Greece, Instructors: Alexandros Stamatakis, Ben Redelings, Bruce Rannalla, Mike May, Maria Anisimova, Ziheng Yang, Adam Leache.\
-📜 2024: BayesTraits Workshop, University of Reading, United Kingdom, Instructor: Joanna Baker.\
-📜 2023: Evolutionary Analysis of Morphology, Okinawa Institute of Science and Technology, Japan, Instructors: Liam J. Revell, Luke J. Harmon, Michael E. Alfaro.\
-📜 2022: RevBayes Workshop, University of Oslo, Norway, Instructors: Sebastian Höhna, Rachel C. M. Warnock.
+📝 2025: Computational Molecular Evolution, Hellenic Centre for Marine Research, Greece, Instructors: Alexandros Stamatakis, Ben Redelings, Bruce Rannalla, Mike May, Maria Anisimova, Ziheng Yang, Adam Leache.\
+📝 2024: BayesTraits Workshop, University of Reading, United Kingdom, Instructor: Joanna Baker.\
+📝 2023: Evolutionary Analysis of Morphology, Okinawa Institute of Science and Technology, Japan, Instructors: Liam J. Revell, Luke J. Harmon, Michael E. Alfaro.\
+📝 2022: RevBayes Workshop, University of Oslo, Norway, Instructors: Sebastian Höhna, Rachel C. M. Warnock.
 
 ### Teaching
 📊 Data Analysis in Community Ecology (3 ECTS), University of Tartu, Lecturer in charge: Meelis Pärtel, Carlos P. Carmona.\
