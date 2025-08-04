@@ -12,6 +12,7 @@ title: ""
 ✒️ Funder: Estonian Research Council (PRG2618)\
 💶 Funding: 270,000 EUR
 
+-------
 ## Concluded grants
 
 #### Comparative studies on insects: focus on body size
