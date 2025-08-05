@@ -7,20 +7,22 @@ title: ""
 
 ### 2025
 
+- **Foerster, S. Í. A.** (2025). Body size prediction in scorpions: A phylogenetic comparative examination of linear measurements of individual body parts. PeerJ, 13, e18621. https://doi.org/10.7717/peerj.18621
+  
 - Brito‐Almeida, T. R., **Foerster, S. Í. A.**, Lima, J. R., Da Silva, M. A., De Moura, G. J. B., & Lira, A. F. A. (2025). Free Pasture of Exotic Goats Reduces Diversity and Negatively Affects Body Condition in Scorpions (Arachnida: Scorpiones) Assemblage From Brazilian Seasonal Dry Tropical Forest. Ecology and Evolution, 15(1), e70804. https://doi.org/10.1002/ece3.70804
 
-- **Foerster, S. Í. A.** (2025). Body size prediction in scorpions: A phylogenetic comparative examination of linear measurements of individual body parts. PeerJ, 13, e18621. https://doi.org/10.7717/peerj.18621
+- Costa, J. M. R., **Foerster, S. Í. A.**, Pessoa, V. B., Tizo-Pedroso, E., De Moura, G. J. B., & De Araujo Lira, A. F. (2025). Biotic interactions rather than habitat complexity predict the occurrence of bark-dwelling social pseudoscorpions in urban environments. Biologia. https://doi.org/10.1007/s11756-025-01985-6
 
 - Ude, K., **Foerster, S. I. A.**, Fetnassi, N., & Tammaru, T. (2025). Forest clear‐cuts support diverse moth fauna but lack common grassland species. Journal of Applied Ecology, 1365-2664.70063. https://doi.org/10.1111/1365-2664.70063
 
 ### 2024
 
-- Dionisio-da-Silva, W., **Foerster, S. Í. A.**, Gallão, J. E., & Lira, A. F. A. (2024). What’s for dinner? Prey consumption by Neotropical scorpions across contrasting environments. The Journal of Arachnology, 52(1). https://doi.org/10.1636/JoA-S-22-060
-
 - **Foerster, S. Í. A.**, Clarke, J. T., Õunap, E., Teder, T., & Tammaru, T. (2024). A comparative study of body size evolution in moths: Evidence of correlated evolution with feeding and phenology-related traits. Journal of Evolutionary Biology, 37(8), 891–904. https://doi.org/10.1093/jeb/voae072
 
 - **Foerster, S. I. A.**, Javoiš, J., Holm, S., & Tammaru, T. (2024). Predicting insect body masses based on linear measurements: A phylogenetic case study on geometrid moths. Biological Journal of the Linnean Society, 141(1), 71–86. https://doi.org/10.1093/biolinnean/blad069
 
+- Dionisio-da-Silva, W., **Foerster, S. Í. A.**, Gallão, J. E., & Lira, A. F. A. (2024). What’s for dinner? Prey consumption by Neotropical scorpions across contrasting environments. The Journal of Arachnology, 52(1). https://doi.org/10.1636/JoA-S-22-060
+  
 - Lira, A. F. A., De Moura, G. J. B., & **Foerster, S. Í. A.** (2024). Scorpion assemblages in threatened Brazilian forests: The role of environmental factors in explaining beta‐diversity patterns. Insect Conservation and Diversity, 17(1), 128–138. https://doi.org/10.1111/icad.12699
 
 - Oliveira Souza, M. C., **Foerster, S. Í. A.**, Salomão, R. P., Souza‐Alves, J. P., De Moura, G. J. B., Lira, A. F. D. A., & Ferreira, R. B. (2024). The role of bromeliad structural complexity on the presence, spatial distribution and predator avoidance in Tityus neglectus (Scorpiones: Buthidae). Ecology and Evolution, 14(6), e11522. https://doi.org/10.1002/ece3.11522
@@ -35,9 +37,9 @@ title: ""
 
 ### 2022
 
-- Cunha, H. P., Santos, A. B., **Foerster, S. Í. A.**, Moura, G. J. B., & Lira, A. F. A. (2022). Can contrasting habitats influence predatory behavior in tropical forest scorpions? Acta Ethologica, 25(2), 107–113. https://doi.org/10.1007/s10211-022-00390-5
-
 - **Foerster, S. I. A.**, Dionisio-da-Silva, W., Dos Santos, A. B., Ribeiro De Albuquerque, C. M., & Lira, A. F. A. (2022). New records of the not-so-rare males of the parthenogenetic scorpion Tityus stigmurus (Thorell, 1876) (Scorpiones: Buthidae). The Journal of Arachnology, 50(1). https://doi.org/10.1636/JoA-S-21-009
+
+- Cunha, H. P., Santos, A. B., **Foerster, S. Í. A.**, Moura, G. J. B., & Lira, A. F. A. (2022). Can contrasting habitats influence predatory behavior in tropical forest scorpions? Acta Ethologica, 25(2), 107–113. https://doi.org/10.1007/s10211-022-00390-5
 
 - Lira, A. F. A., **Foerster, S. I. A.**, Medeiros DeSouza, A., & De Armas, L. F. (2022). Disentangling diversity patterns in Cuban scorpions (Arachnida: Scorpiones). Novitates Caribaea, 19, 72–91. https://doi.org/10.33800/nc.vi19.290
 
