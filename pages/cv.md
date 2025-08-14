@@ -14,13 +14,13 @@ title: ""
 
 -------
 ### Courses & Workshops
-📝 2025: Computational Molecular Evolution, Hellenic Centre for Marine Research, Greece, Instructors: Alexandros Stamatakis, Ben Redelings, Bruce Rannalla, Mike May, Maria Anisimova, Ziheng Yang, Adam Leache.
+📝 2025: Computational Molecular Evolution, Hellenic Centre for Marine Research, Crete, Greece, Instructors: Alexandros Stamatakis, Ben Redelings, Bruce Rannalla, Mike May, Maria Anisimova, Ziheng Yang, Adam Leache.
 
-📝 2024: BayesTraits Workshop, University of Reading, United Kingdom, Instructor: Joanna Baker.
+📝 2024: BayesTraits Workshop, University of Reading, Reading, United Kingdom, Instructor: Joanna Baker.
 
-📝 2023: Evolutionary Analysis of Morphology, Okinawa Institute of Science and Technology, Japan, Instructors: Liam J. Revell, Luke J. Harmon, Michael E. Alfaro, Evan P. Economo, Anjali Goswami, Emma Sherratt, Peter Wainwright.
+📝 2023: Evolutionary Analysis of Morphology, Okinawa Institute of Science and Technology, Okinawa, Japan, Instructors: Liam J. Revell, Luke J. Harmon, Michael E. Alfaro, Evan P. Economo, Anjali Goswami, Emma Sherratt, Peter Wainwright.
 
-📝 2022: RevBayes Workshop, University of Oslo, Norway, Instructors: Sebastian Höhna, Rachel C. M. Warnock.
+📝 2022: RevBayes Workshop, University of Oslo, Oslo, Norway, Instructors: Sebastian Höhna, Rachel C. M. Warnock.
 
 -------
 ### Teaching
@@ -30,9 +30,9 @@ title: ""
 
 -------
 ### Presentations
-📄 2025: Congress of the European Society for Evolutionary Biology (ESEB 2025), Spain, Poster: _Co-evolutionary dynamics of dietary breadth and body size in moths_.
+📄 2025: Congress of the European Society for Evolutionary Biology (ESEB 2025), Barcelona, Spain, Poster: _Co-evolutionary dynamics of dietary breadth and body size in moths_.
 
-📄 2025: EMBO Practical Course Computational Molecular Evolution, Greece, Poster: _Evolutionary transitions in dietary breadth and their relationships with body size in geometrid moths_.
+📄 2025: EMBO Practical Course Computational Molecular Evolution, Crete, Greece, Poster: _Evolutionary transitions in dietary breadth and their relationships with body size in geometrid moths_.
 
 📄 2022: XXII European Congress of Lepidopterology, Laulasmaa, Estonia. Poster: _You do not need a scale to weigh a Geometridae moth: applying allometric relationships to predict dry body weight at maturation stage_.
 
