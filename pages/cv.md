@@ -7,10 +7,10 @@ title: ""
 
 
 ### Education
-🎓 2010-2015: Bachelor's Degree in Biological Sciences, Universidade Federal Rural de Pernambuco (UFRPE, Brazil).\
-🎓 2018-2020: Master’s Degree in Genetics, Universidade Federal de Pernambuco (UFPE, Brazil).\
-🎓 2020-2025: Doctoral Degree in Zoology (Ecology), University of Tartu, Estonia.\
-🏁 2025-2028: Postdoctoral Researcher, Swedish University of Agricultural Sciences, Uppsala, Sweden.
+🏁 2025-2028: Postdoctoral Researcher, Swedish University of Agricultural Sciences, Uppsala, Sweden\
+🎓 2020-2025: University of Tartu (Estonia), Zoology & Ecology, PhD\
+🎓 2018-2020: Universidade Federal de Pernambuco (Brazil), Genetics, M.Sc.\
+🎓 2010-2015: Universidade Federal Rural de Pernambuco (Brazil), Biological Sciences, B.Sc.
 
 -------
 ### Courses & Workshops
