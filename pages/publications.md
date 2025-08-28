@@ -13,6 +13,8 @@ title: ""
 
 - Costa, J. M. R., **Foerster, S. Í. A.**, Pessoa, V. B., Tizo-Pedroso, E., De Moura, G. J. B., & De Araujo Lira, A. F. (2025). Biotic interactions rather than habitat complexity predict the occurrence of bark-dwelling social pseudoscorpions in urban environments. Biologia. https://doi.org/10.1007/s11756-025-01985-6
 
+- Fetnassi, N., **Foerster, S. Í. A.**, Õunap, E., Ghamizi, M., & Tammaru, T. (2025). Complementary roles of agricultural and natural habitats in supporting moth diversity in semi-arid landscapes of Morocco. European Journal of Entomology, 122, 173–183. https://doi.org/10.14411/eje.2025.022
+
 - Ude, K., **Foerster, S. I. A.**, Fetnassi, N., & Tammaru, T. (2025). Forest clear‐cuts support diverse moth fauna but lack common grassland species. Journal of Applied Ecology, 1365-2664.70063. https://doi.org/10.1111/1365-2664.70063
 
 ### 2024
