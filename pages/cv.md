@@ -7,7 +7,8 @@ title: ""
 
 
 ### Education
-🏁 2025-2028: Postdoctoral Researcher, Swedish University of Agricultural Sciences, Uppsala, Sweden\
+🏁 2025-2028: Postdoctoral Researcher, Swedish University of Agricultural Sciences, Uppsala, Sweden
+
 🎓 2020-2025: University of Tartu (Estonia), Zoology & Ecology, PhD\
 🎓 2018-2020: Universidade Federal de Pernambuco (Brazil), Genetics, M.Sc.\
 🎓 2010-2015: Universidade Federal Rural de Pernambuco (Brazil), Biological Sciences, B.Sc.
@@ -24,7 +25,7 @@ title: ""
 
 -------
 ### Teaching
-📊 Data Analysis in Community Ecology (3 ECTS), University of Tartu, Lecturer in charge: Meelis Pärtel, Carlos P. Carmona.\
+📊 Data Analysis in Community Ecology ([LTOM 01.002](https://ois2.ut.ee/#/courses/LTOM.01.002/version/a2d7b264-1814-2686-1eaa-282842d09b33/details)), University of Tartu, Lecturer in charge: Meelis Pärtel, Carlos P. Carmona.
 
 -------
 ### Presentations
