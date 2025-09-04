@@ -40,7 +40,7 @@ title: ""
 My full publication list is available [here](https://foersterst.github.io/pages/publications/).
 
 - **Foerster, S. Í. A.** (2025). Body size prediction in scorpions: A phylogenetic comparative examination of linear measurements of individual body parts. PeerJ, 13, e18621. [view](https://doi.org/10.7717/peerj.18621)
-  
+
 - **Foerster, S. Í. A.**, Clarke, J. T., Õunap, E., Teder, T., & Tammaru, T. (2024). A comparative study of body size evolution in moths: Evidence of correlated evolution with feeding and phenology-related traits. Journal of Evolutionary Biology, 37(8), 891–904. [view](https://doi.org/10.1093/jeb/voae072)
 
 - **Foerster, S. I. A.**, DeSouza, A. M., & Lira, A. F. A. (2019). Macroecological approach for scorpions (Arachnida, Scorpiones): β-diversity in Brazilian montane forests. Canadian Journal of Zoology, 97(10), 914–921. [view](https://doi.org/10.1139/cjz-2019-0008)
