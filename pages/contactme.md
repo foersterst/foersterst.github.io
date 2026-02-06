@@ -18,7 +18,7 @@ stenio.foerster@ut.ee
 ### Personal e-mail
 stenioit@gmail.com
 
-### Social
+### Other media
 
 [Research Gate](https://www.researchgate.net/profile/Stenio-Foerster)
 
