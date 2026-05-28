@@ -5,6 +5,9 @@ title: ""
 
 ## Publications
 
+### 2026
+- Foerster, S. Í. A. (2026). Biomechanical trade-offs and the evolutionary dynamics of weapon morphology: Phylogenetic comparative evidence from scorpion pincers. Evolution, qpag097. https://doi.org/10.1093/evolut/qpag097
+
 ### 2025
 
 - **Foerster, S. Í. A.** (2025). Body size prediction in scorpions: A phylogenetic comparative examination of linear measurements of individual body parts. PeerJ, 13, e18621. [view](https://doi.org/10.7717/peerj.18621)
