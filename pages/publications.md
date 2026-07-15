@@ -6,9 +6,12 @@ title: ""
 ## Publications
 
 ### 2026
+
 - **Foerster, S. Í. A.** (2026). Biomechanical trade-offs and the evolutionary dynamics of weapon morphology: Phylogenetic comparative evidence from scorpion pincers. Evolution, qpag097. [view](https://doi.org/10.1093/evolut/qpag097)
 
 - **Foerster, S. Í. A.**, & Lira, A. F. A. (2026). Broad-Scale Climatic Gradients Drive Multiple Facets of Scorpion Beta Diversity in Northeastern Brazil. Journal of Biogeography, 53(6), e70271. [view](https://doi.org/10.1111/jbi.70271)
+
+- **Foerster, S. Í. A.** (2026). Allometry and the Evolution of Sexual Size Dimorphism in Scorpions: Insights from Neotropical Species. In A. F. de A. Lira & E. González-Santillán (Eds.), The Biology of Neotropical Scorpions: From Taxonomy and Genetics to Ecology and Ethnobiology (pp. 13–30). Springer Nature Switzerland. [view](https://doi.org/10.1007/978-3-032-23194-9_2)
 
 ### 2025
 
