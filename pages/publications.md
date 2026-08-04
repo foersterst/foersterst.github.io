@@ -9,9 +9,13 @@ title: ""
 
 - **Foerster, S. Í. A.** (2026). Biomechanical trade-offs and the evolutionary dynamics of weapon morphology: Phylogenetic comparative evidence from scorpion pincers. Evolution, qpag097. [view](https://doi.org/10.1093/evolut/qpag097)
 
+- **Foerster, S. Í. A.** (2026). Allometry and the Evolution of Sexual Size Dimorphism in Scorpions: Insights from Neotropical Species. In A. F. de A. Lira & E. González-Santillán (Eds.), The Biology of Neotropical Scorpions: From Taxonomy and Genetics to Ecology and Ethnobiology (pp. 13–30). Springer Nature Switzerland. [view](https://doi.org/10.1007/978-3-032-23194-9_2)
+
 - **Foerster, S. Í. A.**, & Lira, A. F. A. (2026). Broad-Scale Climatic Gradients Drive Multiple Facets of Scorpion Beta Diversity in Northeastern Brazil. Journal of Biogeography, 53(6), e70271. [view](https://doi.org/10.1111/jbi.70271)
 
-- **Foerster, S. Í. A.** (2026). Allometry and the Evolution of Sexual Size Dimorphism in Scorpions: Insights from Neotropical Species. In A. F. de A. Lira & E. González-Santillán (Eds.), The Biology of Neotropical Scorpions: From Taxonomy and Genetics to Ecology and Ethnobiology (pp. 13–30). Springer Nature Switzerland. [view](https://doi.org/10.1007/978-3-032-23194-9_2)
+- Cordero, I., Chomel, M., ... **Foerster, S. Í. A.**, Bardgett, R. D., Johnson, D., & Semchenko, M. (2026). Plant genotypic diversity and defoliation jointly shape root exudation, fungal communities, and carbon and nitrogen cycling. New Phytologist, nph.71479. [view](https://doi.org/10.1111/nph.71479)
+
+- Lira, A. F. A., DeSouza, A. M., ... **Foerster, S. Í. A.**, Viana‐Junior, A. B. (2026). Spatial Scale Modulates the Effect of Habitat Amount on Diversity Patterns of Arachnid Assemblages Across Different Brazilian Ecosystems. Journal of Biogeography, 53(8), e70320. [view](https://doi.org/10.1111/jbi.70320)
 
 ### 2025
 
