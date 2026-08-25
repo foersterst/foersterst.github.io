@@ -12,13 +12,13 @@ stenio.foerster@slu.se
 
 ### University of Tartu
 Department of Zoology\
-Juhan Liivi tn 2, 50409 Tartu\
+Juhan Liivi tn 2, 50409 Tartu, Estonia\
 stenio.foerster@ut.ee
 
 ### Personal e-mail
 stenioit@gmail.com
 
-### Other media
+### Links
 
 [Research Gate](https://www.researchgate.net/profile/Stenio-Foerster)
 
