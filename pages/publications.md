@@ -17,6 +17,9 @@ title: ""
 
 - Lira, A. F. A., DeSouza, A. M., ... **Foerster, S. Í. A.**, Viana‐Junior, A. B. (2026). Spatial Scale Modulates the Effect of Habitat Amount on Diversity Patterns of Arachnid Assemblages Across Different Brazilian Ecosystems. Journal of Biogeography, 53(8), e70320. [view](https://doi.org/10.1111/jbi.70320)
 
+- Silva‐Júnior, A. O., Celante, G. L., **Foerster, S. Í. A.**, Feitosa, M. L. B., Moura, G. J. B., & Lira, A. F. A. (2026). Influence of Seasonality on Habitat use and Spatial Distribution Patterns of Tree‐Dwelling Scorpion (Physoctonus debilis) in Brazilian Caatinga. New Zealand Journal of Zoology, 53(3), e70065. [view](https://doi.org/10.1002/njz2.70065)
+
+
 ### 2025
 
 - **Foerster, S. Í. A.** (2025). Body size prediction in scorpions: A phylogenetic comparative examination of linear measurements of individual body parts. PeerJ, 13, e18621. [view](https://doi.org/10.7717/peerj.18621)
