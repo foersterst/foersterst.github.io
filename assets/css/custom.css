@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
 
+/* ---------- Fonts ---------- */
 body,
 h1, h2, h3, h4, h5, h6,
 .navbar-custom .navbar-brand,
@@ -7,19 +8,17 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'IBM Plex Mono', monospace;
 }
 
-.navbar-custom .navbar-brand { font-weight: 600; }
-
 body {
   font-size: 15px;
 }
 
-
+/* ---------- Layout variables ---------- */
 :root {
-  --content-width: 730px;  /* total width of the text column; increase for wider text */
-  --gutter: 12px;           /* inner padding of the column */
+  --content-width: 730px;  /* width of the text column; try 800px for wider */
+  --gutter: 12px;          /* inner padding of the column */
 }
 
-/* 1. Wider body column */
+/* ---------- Body column ---------- */
 .container-md {
   max-width: var(--content-width);
 }
@@ -33,13 +32,20 @@ body {
   padding-right: 0;
 }
 
-/* 2. Navbar edges follow the same column */
+/* Space between the logo and the body text.
+   If this has no effect, remove it and use a spacer div in index.md instead. */
+div[role="main"] {
+  padding-top: 80px;
+}
+
+/* ---------- Navbar ---------- */
+/* Navbar edges follow the same column as the body text */
 .navbar-custom {
   padding-left: max(15px, calc((100% - var(--content-width)) / 2 + var(--gutter)));
   padding-right: max(15px, calc((100% - var(--content-width)) / 2 + var(--gutter)));
 }
 
-/* in case the navbar has its own inner container, neutralise it */
+/* In case the navbar has its own inner container, neutralise it */
 .navbar-custom > .container-md,
 .navbar-custom > .container {
   max-width: none;
@@ -48,39 +54,42 @@ body {
 }
 
 .navbar-custom .navbar-brand {
-  margin-left: 0;
+  font-weight: 600;
+  margin-left: -12px !important;
   padding-left: 0;
 }
 
 .navbar-custom .nav-link,
 .navbar-custom .navbar-nav .nav-link {
   text-transform: none !important;
-}
-
-.navbar-custom .nav-link,
-.navbar-custom .navbar-nav .nav-link {
   font-size: 14px !important;
 }
 
-.navbar-custom .navbar-brand {
-  margin-left: -12px !important;
+/* ---------- Mid-size screens: avoid logo overlapping the menu ---------- */
+@media (max-width: 1000px) {
+  .navbar-custom .nav-link {
+    font-size: 13px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
 }
 
-div[role="main"] {
-  padding-top: 400px;
-}
-
+/* ---------- Phones ---------- */
 @media (max-width: 700px) {
-  /* put back side padding that the wide-column rule removed */
+  /* side padding that the wide-column rule removed */
   .container-md {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  .col-xl-8,
-  .col-lg-10 {
-    padding-left: 0;
-    padding-right: 0;
+  div[role="main"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .navbar-custom {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   /* slightly smaller text so monospace lines fit */
@@ -102,43 +111,15 @@ div[role="main"] {
     max-width: 100%;
   }
 
+  /* let the CV / Publications / Projects / Contact buttons wrap */
+  .btn-group,
+  .button-row {
+    flex-wrap: wrap;
+  }
+
   /* stop any leftover wide element from making the page scroll sideways */
   html, body {
     max-width: 100%;
     overflow-x: hidden;
   }
 }
-
-@media (max-width: 700px) {
-  .btn-group,
-  .button-row {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 700px) {
-  div[role="main"] {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-}
-
-@media (max-width: 700px) {
-  .navbar-custom {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
