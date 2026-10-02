@@ -66,10 +66,6 @@ body {
   margin-left: -12px !important;
 }
 
-.avatar-container {
-  margin-bottom: 100px;  /* increase for more space, decrease for less */
-}
-
 div[role="main"] {
   padding-top: 100px;
 }
