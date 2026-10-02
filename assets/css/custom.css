@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+body,
+h1, h2, h3, h4, h5, h6,
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.navbar-custom .navbar-brand { font-weight: 600; }
