@@ -32,12 +32,6 @@ body {
   padding-right: 0;
 }
 
-/* Space between the logo and the body text.
-   If this has no effect, remove it and use a spacer div in index.md instead. */
-div[role="main"] {
-  padding-top: 80px;
-}
-
 /* ---------- Navbar ---------- */
 /* Navbar edges follow the same column as the body text */
 .navbar-custom {
