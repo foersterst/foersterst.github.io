@@ -15,7 +15,7 @@ body {
 
 
 :root {
-  --content-width: 700px;  /* total width of the text column; increase for wider text */
+  --content-width: 730px;  /* total width of the text column; increase for wider text */
   --gutter: 12px;           /* inner padding of the column */
 }
 
@@ -67,9 +67,9 @@ body {
 }
 
 .avatar-container {
-  margin-bottom: 40px;  /* increase for more space, decrease for less */
+  margin-bottom: 100px;  /* increase for more space, decrease for less */
 }
 
 div[role="main"] {
-  padding-top: 40px;
+  padding-top: 100px;
 }
