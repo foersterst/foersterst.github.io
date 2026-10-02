@@ -141,7 +141,7 @@ navbar-var-length: false
 
 page-col: "#222733"
 navbar-col: "#222733"
-navbar-text-col: "#34eb6e"
+navbar-text-col: "#F26522" # change this
 navbar-border-col: "#222733"
 text-col: "#E6E6E6"
 link-col: "#F26522"
