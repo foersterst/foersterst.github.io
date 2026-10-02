@@ -65,3 +65,7 @@ body {
 .navbar-custom .navbar-brand {
   margin-left: -12px !important;
 }
+
+.avatar-container {
+  margin-bottom: 40px;  /* increase for more space, decrease for less */
+}
