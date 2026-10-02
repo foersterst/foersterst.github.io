@@ -70,7 +70,7 @@ div[role="main"] {
   padding-top: 100px;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 700px) {
   /* put back side padding that the wide-column rule removed */
   .container-md {
     padding-left: 15px;
@@ -109,13 +109,26 @@ div[role="main"] {
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 700px) {
   .btn-group,
   .button-row {
     flex-wrap: wrap;
   }
 }
 
+@media (max-width: 700px) {
+  div[role="main"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-custom {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
 
 
 
