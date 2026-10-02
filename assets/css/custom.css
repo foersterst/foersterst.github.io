@@ -12,3 +12,47 @@ h1, h2, h3, h4, h5, h6,
 body {
   font-size: 15px;
 }
+
+
+:root {
+  --content-width: 1100px;  /* total width of the text column; increase for wider text */
+  --gutter: 12px;           /* inner padding of the column */
+}
+
+/* 1. Wider body column */
+.container-md {
+  max-width: var(--content-width);
+}
+
+.col-xl-8,
+.col-lg-10 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 2. Navbar edges follow the same column */
+.navbar-custom {
+  padding-left: max(15px, calc((100% - var(--content-width)) / 2 + var(--gutter)));
+  padding-right: max(15px, calc((100% - var(--content-width)) / 2 + var(--gutter)));
+}
+
+/* in case the navbar has its own inner container, neutralise it */
+.navbar-custom > .container-md,
+.navbar-custom > .container {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-custom .navbar-brand {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-nav .nav-link {
+  text-transform: lowercase !important;
+}
