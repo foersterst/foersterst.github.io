@@ -119,6 +119,7 @@ body {
 }
 
 .profile-photo {
+  object-position: center top;
   float: right;
   width: 200px;
   aspect-ratio: 1 / 1;      /* square crop; remove for the original proportions */
