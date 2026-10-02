@@ -3,7 +3,7 @@ layout: page
 title:
 ---
 
-<div style="text-align: center; margin: 20px 0 40px;">
+<div style="text-align: center; margin: 20px 0 30px;">
   <img src="/assets/img/stenio_logo2.png" alt="Logo" style="width: 140px; max-width: 100%;">
 </div>
 
