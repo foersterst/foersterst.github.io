@@ -1,3 +1,10 @@
+---
+layout: page
+title: ...
+---
+
+<div style="height: 80px;"></div>
+
 Welcome, and thank you for visiting my website!
 
 I am a postdoctoral researcher at the Swedish University of Agricultural Sciences in Uppsala, Sweden. I work at the [Evonets Lab](https://evonetslab.github.io/), in collaboration with the developers of [TreePPL](https://treeppl.org/), a probabilistic programming language for phylogenetics. My research focuses on developing the R package [treepplr](https://treeppl.org/treepplr/), allowing users run TreePPL models and analyze their output directly from R.
