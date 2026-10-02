@@ -69,3 +69,7 @@ body {
 .avatar-container {
   margin-bottom: 40px;  /* increase for more space, decrease for less */
 }
+
+div[role="main"] {
+  padding-top: 40px;
+}
