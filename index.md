@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ...
+title:
 ---
 
 <div style="text-align: center; margin: 20px 0 40px;">
