@@ -73,3 +73,63 @@ body {
 div[role="main"] {
   padding-top: 100px;
 }
+
+@media (max-width: 730px) {
+  /* put back side padding that the wide-column rule removed */
+  .container-md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col-xl-8,
+  .col-lg-10 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* slightly smaller text so monospace lines fit */
+  body {
+    font-size: 14px;
+  }
+
+  /* let long words, URLs and emails wrap instead of stretching the page */
+  p, li, td, a, h1, h2, h3 {
+    overflow-wrap: anywhere;
+  }
+
+  img, table {
+    max-width: 100%;
+  }
+
+  pre, code {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  /* stop any leftover wide element from making the page scroll sideways */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 730px) {
+  .btn-group,
+  .button-row {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
