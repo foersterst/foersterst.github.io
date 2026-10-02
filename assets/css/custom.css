@@ -15,7 +15,7 @@ body {
 
 
 :root {
-  --content-width: 900px;  /* total width of the text column; increase for wider text */
+  --content-width: 700px;  /* total width of the text column; increase for wider text */
   --gutter: 12px;           /* inner padding of the column */
 }
 
@@ -54,7 +54,7 @@ body {
 
 .navbar-custom .nav-link,
 .navbar-custom .navbar-nav .nav-link {
-  text-transform: lowercase !important;
+  text-transform: none !important;
 }
 
 .navbar-custom .nav-link,
