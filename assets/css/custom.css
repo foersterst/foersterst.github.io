@@ -117,3 +117,22 @@ body {
     overflow-x: hidden;
   }
 }
+
+.profile-photo {
+  float: right;
+  width: 200px;
+  aspect-ratio: 1 / 1;      /* square crop; remove for the original proportions */
+  object-fit: cover;
+  border-radius: 8px;       /* use 50% for a circular photo */
+  margin: 4px 0 16px 24px;  /* space between the photo and the text */
+}
+
+@media (max-width: 700px) {
+  .profile-photo {
+    float: none;
+    display: block;
+    width: 60%;
+    max-width: 220px;
+    margin: 0 auto 20px;
+  }
+}
