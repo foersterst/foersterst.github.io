@@ -10,7 +10,7 @@ title: ""
 🎓 Principal Investigator: Toomas Tammaru\
 📆 Date: 2025-2029\
 ✒️ Funder: Estonian Research Council (PRG2618)\
-💶 Funding: 270,000 EUR
+💶 Funding: 540,000 EUR
 
 -------
 ## Concluded grants
