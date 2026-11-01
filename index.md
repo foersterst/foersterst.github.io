@@ -4,7 +4,7 @@ title:
 ---
 
 <div style="text-align: center; margin: 20px 0 30px;">
-  <img src="/assets/img/stenio_logo2.png" alt="Logo" style="width: 140px; max-width: 100%;">
+  <img src="/assets/img/map_atlassian.png" alt="Logo" style="width: 140px; max-width: 100%;">
 </div>
 
 <img src="/assets/img/profile.jpeg" alt="Stenio I A Foerster" class="profile-photo">
