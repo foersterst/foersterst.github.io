@@ -1,0 +1,40 @@
+/* Dark syntax highlighting for Rouge (base16 dark style) */
+
+.highlight,
+.highlight pre,
+pre.highlight {
+  background-color: #1a1e28;
+  color: #E6E6E6;
+}
+
+.highlight .c,  .highlight .c1, .highlight .cm,
+.highlight .cs, .highlight .cp, .highlight .ch,
+.highlight .cpf                                 { color: #7f8a9e; font-style: italic; } /* comments, #> output */
+
+.highlight .k,  .highlight .kc, .highlight .kd,
+.highlight .kn, .highlight .kp, .highlight .kr,
+.highlight .kt                                  { color: #c792ea; }  /* keywords: function, if, TRUE */
+
+.highlight .s,  .highlight .s1, .highlight .s2,
+.highlight .sb, .highlight .sc, .highlight .sd,
+.highlight .se, .highlight .sh, .highlight .si,
+.highlight .sx, .highlight .sr, .highlight .ss  { color: #c3e88d; }  /* strings */
+
+.highlight .m,  .highlight .mi, .highlight .mf,
+.highlight .mh, .highlight .mo, .highlight .il  { color: #f78c6c; }  /* numbers */
+
+.highlight .nf, .highlight .fm                  { color: #82aaff; }  /* function names */
+.highlight .nb, .highlight .bp                  { color: #89ddff; }  /* built-ins */
+.highlight .n,  .highlight .nv, .highlight .vi,
+.highlight .vg, .highlight .nx, .highlight .py  { color: #E6E6E6; }  /* names, variables */
+.highlight .na                                  { color: #ffcb6b; }  /* argument names */
+.highlight .nc, .highlight .nn, .highlight .nt  { color: #ffcb6b; }  /* classes, namespaces, tags */
+
+.highlight .o,  .highlight .ow                  { color: #89ddff; }  /* operators: <- |> + */
+.highlight .p                                   { color: #bfc7d5; }  /* punctuation: ( ) , */
+
+.highlight .gd                                  { color: #f07178; }  /* diff deleted */
+.highlight .gi                                  { color: #c3e88d; }  /* diff inserted */
+.highlight .gh, .highlight .gu                  { color: #82aaff; font-weight: bold; }
+.highlight .err                                 { color: #f07178; background: none; }
+.highlight .w                                   { color: #E6E6E6; }
