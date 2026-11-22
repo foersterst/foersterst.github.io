@@ -24,6 +24,9 @@ navbar-links:
   CV: pages/cv
   Publications: pages/publications
   Projects: pages/projects
+  Code:
+    - All code: pages/code
+    - "gbscan: COI for Tityus": pages/code/gbscan-tityus
   Contact: pages/contactme
 
 ################
