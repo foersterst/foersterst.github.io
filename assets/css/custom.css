@@ -189,3 +189,12 @@ pre.highlight {
     padding-left: 16px;
   }
 }
+
+code.highlighter-rouge {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFB86C;
+  border: none;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
