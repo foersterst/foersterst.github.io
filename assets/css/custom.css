@@ -145,3 +145,47 @@ pre.highlight {
   color: #E6E6E6;
 }
 
+/* ---------- Table of contents (kramdown {:toc}) ---------- */
+#markdown-toc {
+  list-style: none;
+  padding-left: 0;
+  font-size: 13px;
+}
+
+#markdown-toc::before {
+  content: "On this page";
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34EB6E;            /* same green as your navbar */
+}
+
+#markdown-toc ul {           /* hide sub-headings; show only ## */
+  display: none;
+}
+
+#markdown-toc li {
+  margin-bottom: 6px;
+}
+
+#markdown-toc a {
+  color: #AAAAAA;
+}
+
+#markdown-toc a:hover {
+  color: #FF8A50;
+}
+
+/* On wide screens: fix the TOC in the space right of the text column */
+@media (min-width: 1300px) {
+  #markdown-toc {
+    position: fixed;
+    top: 120px;
+    left: calc(50% + var(--content-width) / 2 + 40px);
+    width: 220px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    border-left: 1px solid #34EB6E55;
+    padding-left: 16px;
+  }
+}

@@ -5,6 +5,8 @@ vignette: >
   %\VignetteIndexEntry{Get COI sequences for the scorpion genus Tityus}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  * TOC
+{:toc}
 ---
 
 This vignette shows the full gbscan pipeline. The example gets the COI
@@ -20,17 +22,19 @@ pipeline has five steps:
 The code in this vignette needs an internet connection. The vignette
 does not run the code when the package is built.
 
+## Installation
+
+Install the development version of gbscan from GitHub:
+
+``` r
+pak::pak("https://github.com/foersterst/gbscan.git")
+```
+
+Then, load the required packages:
+
 ``` r
 library(gbscan)
 library(dplyr)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 ```
 
 ## Before you start: get an NCBI API key
