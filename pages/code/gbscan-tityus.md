@@ -11,11 +11,11 @@ This vignette shows the full gbscan pipeline. The example gets the COI
 sequences of the scorpion genus *Tityus* (Buthidae) from GenBank. The
 pipeline has five steps:
 
-1.  Examine the marker dictionary.
-2.  Count the records.
-3.  Download the records.
-4.  Read the metadata and filter the records.
-5.  Write the sequences to FASTA files.
+1. [Examine the marker dictionary](#step-1-examine-the-marker-dictionary).
+2. [Count the records](#step-2-count-the-records).
+3. [Download the records](#step-3-download-the-records).
+4. [Read the metadata and filter the records](#step-4-read-the-metadata-and-filter-the-records).
+5. [Write the sequences to FASTA files](#step-5-write-the-sequences-to-fasta-files).
 
 The code in this vignette needs an internet connection. The vignette
 does not run the code when the package is built.
