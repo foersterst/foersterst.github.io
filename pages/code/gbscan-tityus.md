@@ -1,5 +1,5 @@
 ---
-title: "Get COI sequences for the scorpion genus Tityus"
+title: "gbscan pipeline: Getting COI sequences from GenBank"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Get COI sequences for the scorpion genus Tityus}

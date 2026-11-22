@@ -23,10 +23,10 @@ author: Stenio I A Foerster
 navbar-links:
   CV: pages/cv
   Publications: pages/publications
-  Projects: pages/projects
   Code:
     - All code: pages/code
-    - "gbscan: COI for Tityus": pages/code/gbscan-tityus
+    - "gbscan pipeline": pages/code/gbscan-tityus
+  Projects: pages/projects
   Contact: pages/contactme
 
 ################
@@ -308,6 +308,8 @@ defaults:
     values:
       css:
         - "/assets/css/code-pages.css"
+      js:
+        - "/assets/js/copy-code.js"
 
 # Exclude these files from production site
 exclude:

@@ -13,4 +13,4 @@ I am a postdoctoral researcher at the Swedish University of Agricultural Science
 
 Beyond that, I am a zoologist with a strong interest in macroecology and macroevolution. Most of my research are on scorpions, which I consider the coolest animals on Earth (after my cat).
 
-[CV](https://foersterst.github.io/pages/cv/) | [Publications](https://foersterst.github.io/pages/publications/) | [Projects](https://foersterst.github.io/pages/projects/) | [Contact](https://foersterst.github.io/pages/contactme/)
+[CV](https://foersterst.github.io/pages/cv/) | [Publications](https://foersterst.github.io/pages/publications/) | [Code](https://foersterst.github.io/pages/code/) | [Projects](https://foersterst.github.io/pages/projects/) | [Contact](https://foersterst.github.io/pages/contactme/)
