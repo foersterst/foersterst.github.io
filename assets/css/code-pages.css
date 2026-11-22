@@ -1,0 +1,13 @@
+/* Styles for the pages in pages/code/ only.
+   _config.yml loads this file for that folder (see "defaults"). */
+
+/* Smaller page title (the theme uses 3.125rem, and 5rem on wide screens) */
+.intro-header .page-heading h1 {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 1200px) {
+  .intro-header .page-heading h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -302,6 +302,12 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  -
+    scope:
+      path: "pages/code" # pages in pages/code/ also load code-pages.css
+    values:
+      css:
+        - "/assets/css/code-pages.css"
 
 # Exclude these files from production site
 exclude:
