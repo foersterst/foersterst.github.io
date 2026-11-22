@@ -5,9 +5,10 @@ vignette: >
   %\VignetteIndexEntry{Get COI sequences for the scorpion genus Tityus}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
-  * TOC
-{:toc}
 ---
+
+* TOC
+{:toc}
 
 This vignette shows the full gbscan pipeline. The example gets the COI
 sequences of the scorpion genus *Tityus* (Buthidae) from GenBank. The
