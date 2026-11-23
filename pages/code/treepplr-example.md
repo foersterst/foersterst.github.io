@@ -3,7 +3,8 @@ title: "treepplr reform"
 output: rmarkdown::html_vignette
 ---
 
-- TOC {:toc}
+* TOC
+{:toc}
 
 Source: [treepplr-example.qmd](https://github.com/foersterst/foersterst.github.io/blob/master/pages/code/treepplr-example.qmd)
 
