@@ -1,14 +1,3 @@
----
-title: treepplr reform
-format:
-  gfm:
-    preserve-yaml: true
-editor: visual
-editor_options:
-  chunk_output_type: console
----
-
-
 # treepplr reform
 
 
@@ -212,7 +201,7 @@ data_crbd <- tp_data(model = "crbd", data = L, check = TRUE, print = FALSE)
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/Rtmp5EwnKj//input-crbd-4d708a5.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpR4xhhw//input-crbd-4d708a5.json'
 
     Model name: crbd
 

@@ -1,14 +1,16 @@
 ---
-title: "treepplr reform"
-format: 
-  gfm:
-    preserve-yaml: true
+format: gfm
 editor: visual
 editor_options: 
   chunk_output_type: console
 ---
 
-- TOC {:toc}
+---
+title: "treepplr reform"
+---
+
+* TOC
+{:toc}
 
 ```{r, echo=FALSE, message=FALSE}
 devtools::load_all("~/Documents/treepplr", quiet = TRUE)
