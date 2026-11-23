@@ -1,7 +1,11 @@
-# treepplr reform
 
 
-- TOC {:toc}
+---
+title: "treepplr reform"
+---
+
+* TOC
+{:toc}
 
 Source:
 [treepplr-example.qmd](https://github.com/foersterst/foersterst.github.io/blob/master/pages/code/treepplr-example.qmd)
@@ -201,7 +205,7 @@ data_crbd <- tp_data(model = "crbd", data = L, check = TRUE, print = FALSE)
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpR4xhhw//input-crbd-4d708a5.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpoJNGgJ//input-crbd-4d708a5.json'
 
     Model name: crbd
 
