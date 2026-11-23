@@ -26,7 +26,7 @@ I've been reworking treepplr to make it faster, easier to use, and less redundan
 
 The core workflow in treepplr is:
 
-**R objects** → `tp_data()` → `tp_sampler()` & `tp_run()` → **R objects**
+**R objects** → `tp_data()` + `tp_sampler()` → `tp_run()` → **R objects**
 
 ```{r, eval=FALSE}
 library(devtools)
@@ -84,7 +84,92 @@ Next, we call `tp_data()` to assemble the JSON file required by TreePPL from the
 data_crbd <- tp_data(model = "crbd", data = L, check = TRUE, print = FALSE)
 ```
 
-`tp_data()` has two new arguments, `check` and `print`. When `check = TRUE`, the function calls the new function `tp_input_check()`, which reads the `model function` signature of the specified model and compares the argument names with the top-level field names in the JSON input file. It reports missing and extra fields. It only checks names, not types.
+`tp_data()` has two new arguments, `check` and `print`. When `check = TRUE`, the function calls the new function `tp_input_check()`, which reads the `model function` signature of the specified model and compares the argument names with the top-level field names in the JSON input file. It reports missing and extra fields. It only checks names, not types. `data_crbd` is an object of class `tpData`, which has its own printing method, controlled by the argument `print`:
+
+```{r}
+class(data_crbd)
+data_crbd
+```
+
+With the data ready, we can build the sampler:
+
+```{r}
+crbd_sampler <- tp_sampler(model = "crbd", method = "smc-apf")
+```
+
+We are using SMC for this example. If you want to pass further arguments to the sampler so that they can be used by TreePPL, you can do so using the dots (`...`) argument in `tp_sampler()`. For instance, if we wanted to use `—-subsample` in a MCMC analysis, we would do:
+
+```{r}
+crbd_mcmc <- tp_sampler(
+  model = "crbd",
+  method = "mcmc",
+  incremental_printing = TRUE
+)
+```
+
+To see all arguments that can be passed to a sampler in TreePPL:
+
+```{r}
+tp_treeppl_options(what = "compile")
+```
+
+In terms of data, we have all we need to run our CRBD model. We can then proceed to call `tp_run()`, which takes the data we have just prepared and some other runtime information:
+
+```{r}
+# uisng the SMC sampler:
+crbd_smc_res <- tp_run(
+  sampler = crbd_sampler,
+  data = data_crbd,
+  sweeps = 2,
+  particles = 15
+)
+
+# uisng the MCMC sampler:
+crbd_mcmc_res <- tp_run(
+  sampler = crbd_mcmc,
+  data = data_crbd,
+  n_runs = 2,
+  iterations = 15
+)
+```
+
+To see all runtime options that can be passed to TreePPL:
+
+```{r}
+tp_treeppl_options(what = "runtime")
+```
+
+To use, let's say, `subsample` for SMC, we'd do:
+
+```{r}
+crbd_smc_res_sub <- tp_run(
+  sampler = crbd_sampler,
+  data = data_crbd,
+  sweeps = 2,
+  particles = 20,
+  subsample = TRUE,
+  subsample_size = 2
+)
+```
+
+`tp_run()` calls `tp_parse_scm()`, `tp_parse_mcmc()`, or `tp_summarise_trees()` internally, based on the chosen model and inference method. `tp_parse_smc()`&`tp_parse_mcmc()` read the body of the `model function` within the `.tppl` file (the `.tppl` file is automatically passed to the parsers by `tp_run()`) to find its `return` statement, which gives the output columns their names. If the model returns a record with named fields (e.g., `return ReturnType { lambda = lambda, mu = mu }`), the names are already in the output and are used as they are.
+
+For the CRBD model, the output of TreePPL is parsed to tidy data frames:
+
+```{r}
+
+# plain SMC
+crbd_smc_res
+table(crbd_smc_res$sweep)
+
+# SMC sith subsample
+crbd_smc_res_sub
+table(crbd_smc_res_sub$sweep)
+
+# MCMC with incremental printing
+crbd_mcmc_res
+table(crbd_mcmc_res$run)
+```
 
 ## Tree inference (pruning) {#tree-inference-pruning}
 
