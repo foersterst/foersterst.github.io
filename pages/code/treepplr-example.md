@@ -1,9 +1,4 @@
----
-title: "treepplr reform"
-output: rmarkdown::html_vignette
----
-
-- TOC {:toc}
+# treepplr reform
 
 
 Source:
@@ -11,10 +6,10 @@ Source:
 
 This vignette covers:
 
-1.  Diversification models (CRBD)
-2.  Tree inference (pruning)
-3.  Host-repertoire (subroot)
-4.  Qualitative trait evolution
+1.  [Diversification models (CRBD)](#diversification-models-crbd)
+2.  [Tree inference (pruning)](#tree-inference-pruning)
+3.  [Host-repertoire (subroot)](#host-repertoire-subroot)
+4.  [Qualitative trait evolution](#qualitative-trait-evolution)
 
 > Make sure you’re using treepplr from my branch `improvements`.
 
@@ -201,7 +196,7 @@ data_crbd <- tp_data(model = "crbd", data = L, check = TRUE, print = FALSE)
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/Rtmpubs00c//input-crbd-4d708a5.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpInHvRS//input-crbd-4d708a5.json'
 
     Model name: crbd
 

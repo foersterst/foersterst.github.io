@@ -1,6 +1,6 @@
 ---
 title: "treepplr reform"
-format: html_vignette
+format: gfm
 editor: visual
 editor_options: 
   chunk_output_type: console
@@ -15,10 +15,10 @@ Source: [treepplr-example.qmd](https://github.com/foersterst/foersterst.github.i
 
 This vignette covers:
 
-1.  Diversification models (CRBD)
-2.  Tree inference (pruning)
-3.  Host-repertoire (subroot)
-4.  Qualitative trait evolution
+1.  [Diversification models (CRBD)](#diversification-models-crbd)
+2.  [Tree inference (pruning)](#tree-inference-pruning)
+3.  [Host-repertoire (subroot)](#host-repertoire-subroot)
+4.  [Qualitative trait evolution]
 
 > Make sure you're using treepplr from my branch `improvements`.
 
@@ -35,7 +35,7 @@ library(ape)
 load_all()
 ```
 
-## Diversification models (CRBD)
+## Diversification models (CRBD) {#diversification-models-crbd}
 
 CRBD, ClaDS2, and BDD2 models are all fitted the same way, so I'll use CRBD as the example here. You can check the correct spelling of each model name with `tp_model_library()`, which has a new look:
 
@@ -86,8 +86,8 @@ data_crbd <- tp_data(model = "crbd", data = L, check = TRUE, print = FALSE)
 
 `tp_data()` has two new arguments, `check` and `print`. When `check = TRUE`, the function calls the new function `tp_input_check()`, which reads the `model function` signature of the specified model and compares the argument names with the top-level field names in the JSON input file. It reports missing and extra fields. It only checks names, not types.
 
-## Tree inference (pruning)
+## Tree inference (pruning) {#tree-inference-pruning}
 
-## Host-repertoire (subroot)
+## Host-repertoire (subroot) {#host-repertoire-subroot}
 
 ## Qualitative trait evolution
