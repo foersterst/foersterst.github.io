@@ -26,6 +26,7 @@ navbar-links:
   Code:
     - All code: pages/code
     - "gbscan pipeline": pages/code/gbscan-tityus
+    - "treepplr reform": pages/code/treepplr-example
   Projects: pages/projects
   Contact: pages/contactme
 

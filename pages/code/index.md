@@ -5,8 +5,9 @@ subtitle: Tutorials for my R packages and scripts
 
 ## R packages
 
-- [gbscan pipeline: Getting COI sequences from GenBank](/pages/code/gbscan-tityus/):
-  count, download, and parse GenBank records.
+- [gbscan pipeline: Getting COI sequences from GenBank](/pages/code/gbscan-tityus/): count, download, and parse GenBank records.
+
+- [treepplr reform](/pages/code/treepplr-example/)
 
 - Diversification models in treepplr: Sampling CRBD, CLaDS, and BDD processes using SMC and MCMC.
 
@@ -21,4 +22,3 @@ subtitle: Tutorials for my R packages and scripts
 - Predicting body size in buthid scorpions.
 
 - R function to help defining MRCA priors for BEAST.
-
