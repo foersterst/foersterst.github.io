@@ -1,6 +1,6 @@
 ---
 title: "treepplr reform"
-format: gfm
+format: html_vignette
 editor: visual
 editor_options: 
   chunk_output_type: console
@@ -13,23 +13,20 @@ library(ape)
 
 Source: [treepplr-example.qmd](https://github.com/foersterst/foersterst.github.io/blob/master/pages/code/treepplr-example.qmd)
 
+This vignette covers:
+
+1.  Diversification models (CRBD)
+2.  Tree inference (pruning)
+3.  Host-repertoire (subroot)
+4.  Qualitative trait evolution
+
+> Make sure you're using treepplr from my branch `improvements`.
+
 I've been reworking treepplr to make it faster, easier to use, and less redundant. Along the way I reorganized the code so it's easier to maintain, and fixed a few bugs. This vignette shows how to convert R objects (lists, data frames, phylo objects, etc.) into TreePPL input files, and how to convert TreePPL output back into R. I'll explain the new and updated functions as they come up.
 
 The core workflow in treepplr is:
 
 **R objects** → `tp_data()` → `tp_sampler()` & `tp_run()` → **R objects**
-
-This vignette covers:
-
-1.  [Diversification models (CRBD)](#diversification-models-crbd)
-
-2.  [Tree inference (pruning)](#tree-inference-pruning)
-
-3.  [Host-repertoire (subroot)](#host-repertoire-subroot)
-
-4.  [Qualitative trait evolution]
-
-> Make sure you're using treepplr from my branch `improvements`.
 
 ```{r, eval=FALSE}
 library(devtools)
@@ -38,7 +35,7 @@ library(ape)
 load_all()
 ```
 
-## Diversification models (CRBD) {#diversification-models-crbd}
+## Diversification models (CRBD)
 
 CRBD, ClaDS2, and BDD2 models are all fitted the same way, so I'll use CRBD as the example here. You can check the correct spelling of each model name with `tp_model_library()`, which has a new look:
 
@@ -89,9 +86,8 @@ data_crbd <- tp_data(model = "crbd", data = L, check = TRUE, print = FALSE)
 
 `tp_data()` has two new arguments, `check` and `print`. When `check = TRUE`, the function calls the new function `tp_input_check()`, which reads the `model function` signature of the specified model and compares the argument names with the top-level field names in the JSON input file. It reports missing and extra fields. It only checks names, not types.
 
+## Tree inference (pruning)
 
-## Tree inference (pruning) {#tree-inference-pruning}
-
-## Host-repertoire (subroot) {#host-repertoire-subroot}
+## Host-repertoire (subroot)
 
 ## Qualitative trait evolution
