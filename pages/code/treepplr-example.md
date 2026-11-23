@@ -1,8 +1,5 @@
+# treepplr reform
 
-
----
-title: "treepplr reform"
----
 
 * TOC
 {:toc}
@@ -205,7 +202,7 @@ data_crbd <- tp_data(model = "crbd", data = L, check = TRUE, print = FALSE)
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpoJNGgJ//input-crbd-4d708a5.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpdWziTO//input-crbd-4d708a5.json'
 
     Model name: crbd
 

@@ -1,4 +1,5 @@
 ---
+title: "treepplr reform"
 format: gfm
 editor: visual
 editor_options: 
@@ -6,10 +7,6 @@ editor_options:
 ---
 
 ```{=markdown}
----
-title: "treepplr reform"
----
-
 * TOC
 {:toc}
 ```
