@@ -1,10 +1,6 @@
 ---
 title: "gbscan pipeline: Getting COI sequences from GenBank"
 output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Get COI sequences for the scorpion genus Tityus}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
 ---
 
 * TOC
