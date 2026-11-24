@@ -162,7 +162,7 @@ For most models in TreePPL's model library, the output of `tp_run()` is a tidy d
 crbd_smc_res
 table(crbd_smc_res$sweep)
 
-# SMC sith subsample
+# SMC with subsample
 crbd_smc_res_sub
 table(crbd_smc_res_sub$sweep)
 
@@ -289,7 +289,7 @@ smc_s1 <- tp_summarise_trees(
 
 Let's compare the tree topologies obtained with MAP and with maximum clade credibility (MCC):
 
-```{r}
+```{r, dpi=300}
 # MCC topology
 smc_s2 <- tp_summarise_trees(
   trees = smc_trees,
@@ -298,7 +298,6 @@ smc_s2 <- tp_summarise_trees(
 )
 
 # plot
-#| dpi: 450
 par(mfrow = c(1, 2), mar = c(1, 1, 3, 1), xpd = TRUE)
 max_x <- max(ape::node.depth.edgelength(smc_s1$tree)) * 1.6
 plot(smc_s1$tree, main = "MAP", x.lim = c(0, max_x), cex = 0.65)
@@ -321,8 +320,7 @@ smc_s3 <- tp_summarise_trees(
 
 The output now has two new elements: `$sample`, which holds four trees drawn at random from the posterior, and `$sample_scores`, which here holds the MAP scores of those four trees. Let's plot them:
 
-```{r}
-#| dpi: 300
+```{r, dpi=300}
 par(mfrow = c(2, 2), mar = c(1, 1, 3, 1), xpd = TRUE)
 max_x <- max(ape::node.depth.edgelength(smc_s3$tree)) * 1.6
 plot(smc_s3$sample[[1]], main = "sample 1", x.lim = c(0, max_x), cex = 0.65)
@@ -344,7 +342,7 @@ dplyr::bind_rows(
 
 Finally, let's check our summary of trees sampled with MCMC:
 
-```{r}
+```{r, dpi=300}
 mcmc_s1 <- tp_summarise_trees(
   trees = mcmc_trees,
   method = "MAP",
@@ -353,7 +351,6 @@ mcmc_s1 <- tp_summarise_trees(
 )
 
 # MCMC vs SMC
-#| dpi: 300
 par(mfrow = c(1, 2), mar = c(1, 1, 3, 1))
 max_depth <- max(
   ape::node.depth.edgelength(mcmc_s1$tree),

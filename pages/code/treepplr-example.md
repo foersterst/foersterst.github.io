@@ -1,10 +1,5 @@
----
-title: "treepplr reform"
-output: rmarkdown::html_vignette
----
+# treepplr reform
 
-* TOC
-{:toc}
 
 Source:
 [treepplr-example.qmd](https://github.com/foersterst/foersterst.github.io/blob/master/pages/code/treepplr-example.qmd)
@@ -127,7 +122,7 @@ data_crbd <- tp_data(
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f//input-crbd-5426756.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm//input-crbd-5426756.json'
 
     Model name: crbd
 
@@ -154,7 +149,7 @@ data_crbd
     ── Data Input ──
 
     Data file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f//input-crbd-5426756.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm//input-crbd-5426756.json'
 
     Model: "crbd"
 
@@ -255,14 +250,14 @@ crbd_smc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 0.89 secs
+    Elapsed time: 1.04 secs
 
     Model: crbd
 
     Method: smc-apf
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
 
     Output file(s): "out.json"
 
@@ -281,14 +276,14 @@ crbd_mcmc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 3.18 secs
+    Elapsed time: 2.31 secs
 
     Model: crbd
 
     Method: mcmc
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
 
     Output file(s): "out1.json" and "out2.json"
 
@@ -358,14 +353,14 @@ crbd_smc_res_sub <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 0.78 secs
+    Elapsed time: 0.7 secs
 
     Model: crbd
 
     Method: smc-apf
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
 
     Output file(s): "out.json"
 
@@ -390,16 +385,16 @@ crbd_smc_res
     # A tibble: 28 × 7
        sweep particle log_weight norm_constant norm_weight lambda    mu
        <int>    <int>      <dbl>         <dbl>       <dbl>  <dbl> <dbl>
-     1     1        1      -2.81         -470.      0.0798  0.241 0.213
-     2     1        2      -2.81         -470.      0.0798  0.241 0.213
-     3     1        3      -2.81         -470.      0.0798  0.241 0.213
-     4     1        4      -2.81         -470.      0.0798  0.241 0.213
-     5     1        5      -2.81         -470.      0.0798  0.241 0.213
-     6     1        6      -2.81         -470.      0.0798  0.241 0.213
-     7     1        7      -2.53         -470.      0.105   0.241 0.213
-     8     1        8      -2.53         -470.      0.105   0.241 0.213
-     9     1        9      -2.53         -470.      0.105   0.241 0.213
-    10     1       10      -2.53         -470.      0.105   0.241 0.213
+     1     1        1      -2.64         -481.           1  0.141 0.133
+     2     1        2      -2.64         -481.           1  0.141 0.133
+     3     1        3      -2.64         -481.           1  0.141 0.133
+     4     1        4      -2.64         -481.           1  0.141 0.133
+     5     1        5      -2.64         -481.           1  0.141 0.133
+     6     1        7      -2.64         -481.           1  0.141 0.133
+     7     1        8      -2.64         -481.           1  0.141 0.133
+     8     1        9      -2.64         -481.           1  0.141 0.133
+     9     1       10      -2.64         -481.           1  0.141 0.133
+    10     1       11      -2.64         -481.           1  0.141 0.133
     # ℹ 18 more rows
 
 ``` r
@@ -410,17 +405,17 @@ table(crbd_smc_res$sweep)
     14 14 
 
 ``` r
-# SMC sith subsample
+# SMC with subsample
 crbd_smc_res_sub
 ```
 
     # A tibble: 4 × 7
       sweep particle log_weight norm_constant norm_weight lambda    mu
       <int>    <int>      <dbl>         <dbl>       <dbl>  <dbl> <dbl>
-    1     1        1     -0.693        -1006.   1.86e-211  0.774 0.393
-    2     1        2     -0.693        -1006.   1.86e-211  0.774 0.393
-    3     2        1     -0.693         -521.   1   e+  0  0.562 0.487
-    4     2        2     -0.693         -521.   1   e+  0  0.562 0.487
+    1     1        1     -0.693         -501.    1   e+ 0  0.370 0.302
+    2     1        2     -0.693         -501.    1   e+ 0  0.370 0.302
+    3     2        1     -0.693         -553.    2.30e-23  0.410 0.300
+    4     2        2     -0.693         -553.    2.30e-23  0.410 0.300
 
 ``` r
 table(crbd_smc_res_sub$sweep)
@@ -435,18 +430,18 @@ crbd_mcmc_res
 ```
 
     # A tibble: 32 × 4
-         run iteration   lambda       mu
-       <int>     <int>    <dbl>    <dbl>
-     1     1         1 0.000444 0.000309
-     2     1         2 0.000444 0.000309
-     3     1         3 0.000444 0.000309
-     4     1         4 0.000444 0.000309
-     5     1         5 0.000444 0.000309
-     6     1         6 0.000444 0.000309
-     7     1         7 0.000444 0.000309
-     8     1         8 0.000444 0.000309
-     9     1         9 0.000444 0.000309
-    10     1        10 0.000444 0.000309
+         run iteration   lambda        mu
+       <int>     <int>    <dbl>     <dbl>
+     1     1         1 0.000425 0.000250 
+     2     1         2 0.000425 0.000250 
+     3     1         3 0.000425 0.000250 
+     4     1         4 0.000425 0.000250 
+     5     1         5 0.000425 0.000250 
+     6     1         6 0.000425 0.0000962
+     7     1         7 0.000425 0.0000962
+     8     1         8 0.000425 0.0000962
+     9     1         9 0.000425 0.0000962
+    10     1        10 0.000425 0.0000962
     # ℹ 22 more rows
 
 ``` r
@@ -556,7 +551,7 @@ data_tree_inf <- tp_data(
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f//input-tree_inference_pruning_gtr-31eaa08.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm//input-tree_inference_pruning_gtr-31eaa08.json'
 
     Model name: tree_inference_pruning_gtr
 
@@ -600,14 +595,14 @@ tree_smc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 0.94 secs
+    Elapsed time: 0.92 secs
 
     Model: tree_inference_pruning_gtr
 
     Method: smc-apf
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
 
     Output file(s): "out.json"
 
@@ -632,14 +627,14 @@ tree_mcmc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 1.74 secs
+    Elapsed time: 1.77 secs
 
     Model: tree_inference_pruning_gtr
 
     Method: mcmc
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmphtxI5f/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
 
     Output file(s): "out-mcmc1.json" and "out-mcmc2.json"
 
@@ -658,7 +653,7 @@ str(tree_smc_res)
     List of 3
      $ tree        :List of 5
       ..$ edge       : int [1:18, 1:2] 11 12 13 14 14 13 12 15 16 16 ...
-      ..$ edge.length: num [1:18] 0.0119 0.0414 0.1492 0.0597 0.0597 ...
+      ..$ edge.length: num [1:18] 0.0367 0.0702 0.1596 0.097 0.097 ...
       ..$ tip.label  : chr [1:10] "1" "2" "3" "4" ...
       ..$ Nnode      : int 9
       ..$ node.label : chr [1:9] "1" "1" "1" "1" ...
@@ -668,11 +663,11 @@ str(tree_smc_res)
       ..- attr(*, "names")= chr "MAP"
      $ node_summary: tibble [9 × 7] (S3: tbl_df/tbl/data.frame)
       ..$ node      : int [1:9] 11 12 13 14 15 16 17 18 19
-      ..$ posterior : num [1:9] 1 1 1 1 1 ...
-      ..$ age_mean  : num [1:9] 0.2749 0.251 0.2089 0.0597 0.1314 ...
-      ..$ age_median: num [1:9] 0.2622 0.2503 0.2089 0.0597 0.1314 ...
-      ..$ age_lower : num [1:9] 0.2622 0.2503 0.2089 0.0597 0.1314 ...
-      ..$ age_upper : num [1:9] 0.3131 0.2545 0.2089 0.0597 0.1314 ...
+      ..$ posterior : num [1:9] 1 1 1 1 1 1 1 1 1
+      ..$ age_mean  : num [1:9] 0.36 0.322 0.257 0.097 0.133 ...
+      ..$ age_median: num [1:9] 0.363 0.327 0.257 0.097 0.133 ...
+      ..$ age_lower : num [1:9] 0.348 0.316 0.257 0.097 0.133 ...
+      ..$ age_upper : num [1:9] 0.381 0.327 0.257 0.097 0.133 ...
       ..$ n_trees   : int [1:9] 19 19 19 19 19 19 19 19 19
 
 The first element is the MAP tree, an `ape::phylo` object. `$tree_score`
@@ -718,7 +713,6 @@ smc_s2 <- tp_summarise_trees(
 )
 
 # plot
-#| dpi: 450
 par(mfrow = c(1, 2), mar = c(1, 1, 3, 1), xpd = TRUE)
 max_x <- max(ape::node.depth.edgelength(smc_s1$tree)) * 1.6
 plot(smc_s1$tree, main = "MAP", x.lim = c(0, max_x), cex = 0.65)
@@ -775,9 +769,9 @@ dplyr::bind_rows(
     # A tibble: 4 × 6
       Min.        `1st Qu.`   Median      Mean        `3rd Qu.`   Max.       
       <table[1d]> <table[1d]> <table[1d]> <table[1d]> <table[1d]> <table[1d]>
-    1 0.013450769 0.07453129  0.1334419   0.1255436   0.1784321   0.2363658  
-    2 0.013450769 0.07453129  0.1334419   0.1255436   0.1784321   0.2363658  
-    3 0.005209002 0.07453129  0.1334419   0.1246279   0.1784321   0.2363658  
+    1 0.022540398 0.07453129  0.1334419   0.1265536   0.1784321   0.2363658  
+    2 0.005209002 0.07453129  0.1334419   0.1246279   0.1784321   0.2363658  
+    3 0.022540398 0.07453129  0.1334419   0.1265536   0.1784321   0.2363658  
     4 0.005209002 0.07453129  0.1334419   0.1246279   0.1784321   0.2363658  
 
 Finally, let’s check our summary of trees sampled with MCMC:
@@ -791,7 +785,6 @@ mcmc_s1 <- tp_summarise_trees(
 )
 
 # MCMC vs SMC
-#| dpi: 300
 par(mfrow = c(1, 2), mar = c(1, 1, 3, 1))
 max_depth <- max(
   ape::node.depth.edgelength(mcmc_s1$tree),
