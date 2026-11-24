@@ -95,7 +95,7 @@ The data is ready. Now, let's build the sampler:
 crbd_sampler <- tp_sampler(model = "crbd", method = "smc-apf")
 ```
 
-We are using SMC for this example. If you want to pass further arguments to the sampler so that they can be used in TreePPL, you can do so using the dots (`...`) argument in `tp_sampler()`. For instance, if we wanted to use `—-subsample` in a MCMC analysis, we would do:
+We're using SMC for this example. To pass extra arguments through to the TreePPL sampler, use the dots (`...`) argument in `tp_sampler()`. For instance, to use `incremental_printing` in an MCMC analysis:
 
 ```{r}
 crbd_mcmc <- tp_sampler(
@@ -298,6 +298,7 @@ smc_s2 <- tp_summarise_trees(
 )
 
 # plot
+#| dpi: 450
 par(mfrow = c(1, 2), mar = c(1, 1, 3, 1), xpd = TRUE)
 max_x <- max(ape::node.depth.edgelength(smc_s1$tree)) * 1.6
 plot(smc_s1$tree, main = "MAP", x.lim = c(0, max_x), cex = 0.65)
@@ -321,6 +322,7 @@ smc_s3 <- tp_summarise_trees(
 The output now has two new elements: `$sample`, which holds four trees drawn at random from the posterior, and `$sample_scores`, which here holds the MAP scores of those four trees. Let's plot them:
 
 ```{r}
+#| dpi: 300
 par(mfrow = c(2, 2), mar = c(1, 1, 3, 1), xpd = TRUE)
 max_x <- max(ape::node.depth.edgelength(smc_s3$tree)) * 1.6
 plot(smc_s3$sample[[1]], main = "sample 1", x.lim = c(0, max_x), cex = 0.65)
@@ -351,6 +353,7 @@ mcmc_s1 <- tp_summarise_trees(
 )
 
 # MCMC vs SMC
+#| dpi: 300
 par(mfrow = c(1, 2), mar = c(1, 1, 3, 1))
 max_depth <- max(
   ape::node.depth.edgelength(mcmc_s1$tree),
