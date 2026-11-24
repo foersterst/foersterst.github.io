@@ -37,7 +37,7 @@ load_all()
 
 ## Diversification models (CRBD) {#diversification-models-crbd}
 
-CRBD, ClaDS2, and BDD2 models are all fitted the same way, so I'll use CRBD as the example here. For this example, I'm gonna use a tree for the scorpion genus Centruroides, which is shipped with the treepplr's version on my branch improvements:
+CRBD, ClaDS2, and BDD2 models are all fitted the same way, so I'll use CRBD as the example here. I'll use a tree of the scorpion genus *Centruroides*, which is included in the version of treepplr on my `improvements` branch:
 
 ```{r}
 # read in the tree
