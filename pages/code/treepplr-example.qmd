@@ -17,7 +17,7 @@ This vignette covers:
 
 1.  [Diversification models (CRBD)](#diversification-models-crbd)
 2.  [Tree inference (pruning)](#tree-inference-pruning)
-3.  [Host-repertoire (subroot)](#host-repertoire-subroot)
+3.  [Host-repertoire (flat root prior)](#host-repertoire-subroot)
 4.  [Qualitative trait evolution]
 
 > Make sure you're using treepplr from my branch `improvements`.
@@ -268,12 +268,12 @@ When we ran `tp_run()`, the message printed at the end of the run gave the path 
 
 ```{r}
 # SMC output
-smc_trees <- "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpdPIDdc/out.json"
+smc_trees <- "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpaVtttc/out.json"
 
 # MCMC output
 mcmc_trees <- c(
-  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpdPIDdc/out-mcmc1.json",
-  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpdPIDdc/out-mcmc2.json"
+  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpaVtttc/out-mcmc1.json",
+  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpaVtttc/out-mcmc2.json"
 )
 ```
 
@@ -363,6 +363,147 @@ plot(smc_s1$tree,  main = "MAP: SMC",  x.lim = shared_xlim, cex = 0.65)
 
 The MAP topologies from the SMC and MCMC posteriors differ slightly.
 
-## Host-repertoire (subroot) {#host-repertoire-subroot}
+## Host-repertoire (flat root prior) {#host-repertoire-subroot}
+
+The host-repertoire model describes how a clade of symbionts gains and loses hosts along its phylogeny. It needs more inputs than the previous models:
+
+```{r}
+tp_expected_input("flat-root-prior-HRM")
+```
+
+For the host-repertoire, TreePPL expects a `TreeLabeled`, which is a tree in which every tip and every internal node carries an integer label. We build it from an `ape::phylo` object with `tp_phylo_to_tpPhylo()`, using two arguments that add extra fields to the tree:
+
+- `leaf_extra`: a function of the tip number that returns a named list of fields to add to each tip;
+- `node_extra`: the same, for each internal node.
+
+Both functions get the node's number in the `phylo` object. To see what these numbers are, let's build a toy symbiont tree and look at its structure:
+
+```{r}
+phy <- ape::read.tree(text = "((A:4,B:4):6,(C:7,D:7):3);")
+phy$tip.label
+phy$edge
+```
+
+`ape` numbers the nodes in a fixed way:
+
+- tips are `1` to `n` (here `1:4`), in the order of `phy$tip.label` (A = 1, B = 2, C = 3, D = 4);
+- the root is `n + 1` (here `5`);
+- the other internal nodes follow (here `6` is the ancestor of A and B, and `7` the ancestor of C and D).
+
+```{r, dpi=300}
+plot.phylo(phy, direction = "upwards")
+nodelabels(frame = "none", col = "blue", adj = c(0.5, -0.5))
+```
+
+`tp_phylo_to_tpPhylo()` walks the tree from the root (node 5) down to the tips. Each internal node becomes a `Node` with `left`, `right` and `age`, and each tip becomes a `Leaf` with its `age`. Ages are computed from the branch lengths as time before the present, so the tips are 0, node 6 is 4, node 7 is 7, and the root is 10. Then `leaf_extra(i)` and `node_extra(i)` are called with each node's ape number `i`, and the fields they return are added to the `tpPhylo` object. Using `label = i` gives every node its ape number as its label:
+
+```{r}
+symbiont_tree <- tp_phylo_to_tpPhylo(
+  phy,
+  leaf_extra = function(i) list(label = i),
+  node_extra = function(i) list(label = i)
+)
+symbiont_tree
+```
+
+The tip labels matter as the model uses them to find each tip's row in the interaction matrix. Because ape numbers the tips in the order of `phy$tip.label`, the rows of the interaction matrix must follow that same order (A, B, C, D).
+
+To keep things simple and running fast, we use three hosts, related by this tree:
+
+```{r}
+# toy host tree
+host_phy <- ape::read.tree(text = "((H1:1,H2:1):2,H3:3);")
+
+# cophenetic distances between hosts:
+host_dist <- ape::cophenetic.phylo(host_phy)
+host_dist
+```
+
+The interaction matrix has one row per symbiont, in the order of `phy$tip.label`, and one column per host, in the same order as `host_dist`. It is coded 0 = non-host, 1 = potential host, 2 = actual host:
+
+```{r}
+interactions <- matrix(
+  c(
+    2, 0, 0, # symbiont A...
+    2, 2, 0, 
+    0, 0, 2,
+    0, 2, 2 # symbiont D
+  ),
+  nrow = 4,
+  byrow = TRUE,
+  dimnames = list(phy$tip.label, colnames(host_dist))
+)
+interactions
+```
+
+TreePPL takes both matrices as flat vectors (`Int[]` and `Real[]`), read row by row. R stores matrices column by column, so **we transpose before flattening**:
+
+```{r}
+interactions_flat <- as.integer(t(interactions))
+host_dist_flat <- as.vector(t(host_dist))
+```
+
+Now, we create our named list respecting the names given above by `tp_expected_input()`:
+
+```{r}
+L3 <- list(
+  symbiont_tree = symbiont_tree,
+  ntips = ape::Ntip(phy),
+  nhosts = ncol(interactions),
+  interactions = interactions_flat,
+  host_distances = host_dist_flat,
+  dMean = sum(host_dist[upper.tri(host_dist)]) / nrow(host_dist)
+)
+```
+
+The parameter `dMean` is the mean cophenetic distance among hosts. Because `host_dist` is a symmetric matrix, we only use half of it (here, the upper triangle) to calculate the mean distance.
+
+We can now, build the data for TreePPL using tp_data():
+
+```{r}
+data_hrm <- tp_data(
+  model = "flat-root-prior-HRM",
+  data = L3,
+  print = FALSE,
+  check = TRUE
+)
+```
+
+And the sampler:
+
+```{r}
+sampler_hrm <- tp_sampler(model = "flat-root-prior-HRM", method = "smc-apf")
+```
+
+Let's give it a go:
+
+```{r}
+hrm_res <- tp_run(
+  sampler = sampler_hrm,
+  data = data_hrm,
+  n_processes = 2,
+  sweeps = 2,
+  particles = 20
+)
+```
+
+The output is a tidy data frame (a parser for the character histories is under development):
+
+```{r}
+hrm_res
+```
+
+`lambda_1` to `lambda_4` are the relative rates of change between the host states (0 → 1, 1 → 0, 1 → 2 and 2 → 1) and sum to 1:
+
+| Parameter  | Change | Meaning                                            |
+|------------|--------|----------------------------------------------------|
+| `lambda_1` | 0 → 1  | a non-host becomes a potential host                |
+| `lambda_2` | 1 → 0  | a potential host is lost                           |
+| `lambda_3` | 1 → 2  | a potential host becomes an actual host            |
+| `lambda_4` | 2 → 1  | an actual host goes back to being a potential host |
+
+`mu` scales them to an overall rate, and `beta` controls how much host distance affects these changes.
 
 ## Qualitative trait evolution
+
+Todo.

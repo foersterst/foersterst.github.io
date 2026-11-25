@@ -13,7 +13,7 @@ This vignette covers:
 
 1.  [Diversification models (CRBD)](#diversification-models-crbd)
 2.  [Tree inference (pruning)](#tree-inference-pruning)
-3.  [Host-repertoire (subroot)](#host-repertoire-subroot)
+3.  [Host-repertoire (flat root prior)](#host-repertoire-subroot)
 4.  [Qualitative trait evolution](#qualitative-trait-evolution)
 
 > Make sure you’re using treepplr from my branch `improvements`.
@@ -127,7 +127,7 @@ data_crbd <- tp_data(
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm//input-crbd-5426756.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq//input-crbd-5426756.json'
 
     Model name: crbd
 
@@ -154,7 +154,7 @@ data_crbd
     ── Data Input ──
 
     Data file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm//input-crbd-5426756.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq//input-crbd-5426756.json'
 
     Model: "crbd"
 
@@ -255,14 +255,14 @@ crbd_smc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 1.04 secs
+    Elapsed time: 0.73 secs
 
     Model: crbd
 
     Method: smc-apf
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq/"
 
     Output file(s): "out.json"
 
@@ -281,14 +281,14 @@ crbd_mcmc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 2.31 secs
+    Elapsed time: 2.26 secs
 
     Model: crbd
 
     Method: mcmc
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq/"
 
     Output file(s): "out1.json" and "out2.json"
 
@@ -358,14 +358,14 @@ crbd_smc_res_sub <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 0.7 secs
+    Elapsed time: 0.66 secs
 
     Model: crbd
 
     Method: smc-apf
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq/"
 
     Output file(s): "out.json"
 
@@ -388,18 +388,18 @@ crbd_smc_res
 ```
 
     # A tibble: 28 × 7
-       sweep particle log_weight norm_constant norm_weight lambda    mu
-       <int>    <int>      <dbl>         <dbl>       <dbl>  <dbl> <dbl>
-     1     1        1      -2.64         -481.           1  0.141 0.133
-     2     1        2      -2.64         -481.           1  0.141 0.133
-     3     1        3      -2.64         -481.           1  0.141 0.133
-     4     1        4      -2.64         -481.           1  0.141 0.133
-     5     1        5      -2.64         -481.           1  0.141 0.133
-     6     1        7      -2.64         -481.           1  0.141 0.133
-     7     1        8      -2.64         -481.           1  0.141 0.133
-     8     1        9      -2.64         -481.           1  0.141 0.133
-     9     1       10      -2.64         -481.           1  0.141 0.133
-    10     1       11      -2.64         -481.           1  0.141 0.133
+       sweep particle log_weight norm_constant norm_weight lambda     mu
+       <int>    <int>      <dbl>         <dbl>       <dbl>  <dbl>  <dbl>
+     1     1        1      -2.63         -469.       1      0.101 0.0547
+     2     1        3      -2.65         -469.       0.984  0.101 0.0547
+     3     1        4      -2.65         -469.       0.984  0.101 0.0547
+     4     1        5      -2.65         -469.       0.984  0.101 0.0547
+     5     1        6      -2.65         -469.       0.984  0.101 0.0547
+     6     1        7      -2.63         -469.       1      0.101 0.0547
+     7     1        8      -2.63         -469.       1      0.101 0.0547
+     8     1        9      -2.63         -469.       1      0.101 0.0547
+     9     1       10      -2.63         -469.       1      0.101 0.0547
+    10     1       11      -2.63         -469.       1      0.101 0.0547
     # ℹ 18 more rows
 
 ``` r
@@ -417,10 +417,10 @@ crbd_smc_res_sub
     # A tibble: 4 × 7
       sweep particle log_weight norm_constant norm_weight lambda    mu
       <int>    <int>      <dbl>         <dbl>       <dbl>  <dbl> <dbl>
-    1     1        1     -0.693         -501.    1   e+ 0  0.370 0.302
-    2     1        2     -0.693         -501.    1   e+ 0  0.370 0.302
-    3     2        1     -0.693         -553.    2.30e-23  0.410 0.300
-    4     2        2     -0.693         -553.    2.30e-23  0.410 0.300
+    1     1        1     -0.693         -494.       0.596  0.356 0.345
+    2     1        2     -0.693         -494.       0.596  0.356 0.345
+    3     2        1     -0.693         -493.       1      0.345 0.311
+    4     2        2     -0.693         -493.       1      0.345 0.311
 
 ``` r
 table(crbd_smc_res_sub$sweep)
@@ -435,18 +435,18 @@ crbd_mcmc_res
 ```
 
     # A tibble: 32 × 4
-         run iteration   lambda        mu
-       <int>     <int>    <dbl>     <dbl>
-     1     1         1 0.000425 0.000250 
-     2     1         2 0.000425 0.000250 
-     3     1         3 0.000425 0.000250 
-     4     1         4 0.000425 0.000250 
-     5     1         5 0.000425 0.000250 
-     6     1         6 0.000425 0.0000962
-     7     1         7 0.000425 0.0000962
-     8     1         8 0.000425 0.0000962
-     9     1         9 0.000425 0.0000962
-    10     1        10 0.000425 0.0000962
+         run iteration  lambda      mu
+       <int>     <int>   <dbl>   <dbl>
+     1     1         1 0.00209 0.00136
+     2     1         2 0.00209 0.00136
+     3     1         3 0.00209 0.00136
+     4     1         4 0.00209 0.00136
+     5     1         5 0.00209 0.00136
+     6     1         6 0.00209 0.00136
+     7     1         7 0.00209 0.00136
+     8     1         8 0.00209 0.00136
+     9     1         9 0.00209 0.00136
+    10     1        10 0.00209 0.00136
     # ℹ 22 more rows
 
 ``` r
@@ -556,7 +556,7 @@ data_tree_inf <- tp_data(
     ── Input Check ──
 
     JSON file:
-    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm//input-tree_inference_pruning_gtr-31eaa08.json'
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq//input-tree_inference_pruning_gtr-31eaa08.json'
 
     Model name: tree_inference_pruning_gtr
 
@@ -600,14 +600,14 @@ tree_smc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 0.92 secs
+    Elapsed time: 0.84 secs
 
     Model: tree_inference_pruning_gtr
 
     Method: smc-apf
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq/"
 
     Output file(s): "out.json"
 
@@ -632,14 +632,14 @@ tree_mcmc_res <- tp_run(
 
     ✔ Completed
 
-    Elapsed time: 1.77 secs
+    Elapsed time: 1.57 secs
 
     Model: tree_inference_pruning_gtr
 
     Method: mcmc
 
     Output directory:
-    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmptV9rTm/"
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq/"
 
     Output file(s): "out-mcmc1.json" and "out-mcmc2.json"
 
@@ -657,23 +657,23 @@ str(tree_smc_res)
 
     List of 3
      $ tree        :List of 5
-      ..$ edge       : int [1:18, 1:2] 11 12 13 14 14 13 12 15 16 16 ...
-      ..$ edge.length: num [1:18] 0.0367 0.0702 0.1596 0.097 0.097 ...
+      ..$ edge       : int [1:18, 1:2] 11 12 13 13 14 14 12 15 15 16 ...
+      ..$ edge.length: num [1:18] 0.00896 0.13793 0.27493 0.094 0.18093 ...
       ..$ tip.label  : chr [1:10] "1" "2" "3" "4" ...
       ..$ Nnode      : int 9
-      ..$ node.label : chr [1:9] "1" "1" "1" "1" ...
+      ..$ node.label : chr [1:9] "1" "0.895" "0.895" "1" ...
       ..- attr(*, "class")= chr "phylo"
       ..- attr(*, "order")= chr "cladewise"
-     $ tree_score  : Named num 1
+     $ tree_score  : Named num 0.895
       ..- attr(*, "names")= chr "MAP"
      $ node_summary: tibble [9 × 7] (S3: tbl_df/tbl/data.frame)
       ..$ node      : int [1:9] 11 12 13 14 15 16 17 18 19
-      ..$ posterior : num [1:9] 1 1 1 1 1 1 1 1 1
-      ..$ age_mean  : num [1:9] 0.36 0.322 0.257 0.097 0.133 ...
-      ..$ age_median: num [1:9] 0.363 0.327 0.257 0.097 0.133 ...
-      ..$ age_lower : num [1:9] 0.348 0.316 0.257 0.097 0.133 ...
-      ..$ age_upper : num [1:9] 0.381 0.327 0.257 0.097 0.133 ...
-      ..$ n_trees   : int [1:9] 19 19 19 19 19 19 19 19 19
+      ..$ posterior : num [1:9] 1 0.895 0.895 1 1 ...
+      ..$ age_mean  : num [1:9] 0.422 0.413 0.275 0.181 0.27 ...
+      ..$ age_median: num [1:9] 0.422 0.413 0.275 0.181 0.27 ...
+      ..$ age_lower : num [1:9] 0.417 0.413 0.275 0.181 0.27 ...
+      ..$ age_upper : num [1:9] 0.427 0.413 0.275 0.181 0.27 ...
+      ..$ n_trees   : int [1:9] 17 17 17 17 17 17 17 17 17
 
 The first element is the MAP tree, an `ape::phylo` object. `$tree_score`
 holds the MAP score for that topology, and `$node_summary` gives a
@@ -686,12 +686,12 @@ do.
 
 ``` r
 # SMC output
-smc_trees <- "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpdPIDdc/out.json"
+smc_trees <- "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpaVtttc/out.json"
 
 # MCMC output
 mcmc_trees <- c(
-  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpdPIDdc/out-mcmc1.json",
-  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpdPIDdc/out-mcmc2.json"
+  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpaVtttc/out-mcmc1.json",
+  "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpaVtttc/out-mcmc2.json"
 )
 ```
 
@@ -774,10 +774,10 @@ dplyr::bind_rows(
     # A tibble: 4 × 6
       Min.        `1st Qu.`   Median      Mean        `3rd Qu.`   Max.       
       <table[1d]> <table[1d]> <table[1d]> <table[1d]> <table[1d]> <table[1d]>
-    1 0.022540398 0.07453129  0.1334419   0.1265536   0.1784321   0.2363658  
-    2 0.005209002 0.07453129  0.1334419   0.1246279   0.1784321   0.2363658  
-    3 0.022540398 0.07453129  0.1334419   0.1265536   0.1784321   0.2363658  
-    4 0.005209002 0.07453129  0.1334419   0.1246279   0.1784321   0.2363658  
+    1 0.064245087 0.10996176  0.1383643   0.1674446   0.2313175   0.3097521  
+    2 0.006250311 0.09931269  0.1371154   0.1557678   0.2313175   0.3097521  
+    3 0.012918882 0.09931269  0.1371154   0.1516469   0.2313175   0.3097521  
+    4 0.064245087 0.10996176  0.1383643   0.1674446   0.2313175   0.3097521  
 
 Finally, let’s check our summary of trees sampled with MCMC:
 
@@ -804,6 +804,278 @@ plot(smc_s1$tree,  main = "MAP: SMC",  x.lim = shared_xlim, cex = 0.65)
 
 The MAP topologies from the SMC and MCMC posteriors differ slightly.
 
-## Host-repertoire (subroot)
+## Host-repertoire (flat root prior)
+
+The host-repertoire model describes how a clade of symbionts gains and
+loses hosts along its phylogeny. It needs more inputs than the previous
+models:
+
+``` r
+tp_expected_input("flat-root-prior-HRM")
+```
+
+    ── Expected Input ──
+
+    Model file:
+    '/tmp/treeppl-0.4/6yjjihgyj569rg7bw7jkqxy3z1-treeppl-0.4/lib/mcore/treeppl/models/host-repertoire-evolution/flat-root-prior-HRM.tppl'
+
+    Model name: flat-root-prior-HRM
+
+    Expected arguments:
+
+    • symbiont_tree (tpPhylo)
+
+    • ntips (integer)
+
+    • nhosts (integer)
+
+    • interactions (integer vector)
+
+    • host_distances (numeric vector)
+
+    • dMean (numeric)
+
+For the host-repertoire, TreePPL expects a `TreeLabeled`, which is a
+tree in which every tip and every internal node carries an integer
+label. We build it from an `ape::phylo` object with
+`tp_phylo_to_tpPhylo()`, using two arguments that add extra fields to
+the tree:
+
+- `leaf_extra`: a function of the tip number that returns a named list
+  of fields to add to each tip;
+- `node_extra`: the same, for each internal node.
+
+Both functions get the node’s number in the `phylo` object. To see what
+these numbers are, let’s build a toy symbiont tree and look at its
+structure:
+
+``` r
+phy <- ape::read.tree(text = "((A:4,B:4):6,(C:7,D:7):3);")
+phy$tip.label
+```
+
+    [1] "A" "B" "C" "D"
+
+``` r
+phy$edge
+```
+
+         [,1] [,2]
+    [1,]    5    6
+    [2,]    6    1
+    [3,]    6    2
+    [4,]    5    7
+    [5,]    7    3
+    [6,]    7    4
+
+`ape` numbers the nodes in a fixed way:
+
+- tips are `1` to `n` (here `1:4`), in the order of `phy$tip.label` (A =
+  1, B = 2, C = 3, D = 4);
+- the root is `n + 1` (here `5`);
+- the other internal nodes follow (here `6` is the ancestor of A and B,
+  and `7` the ancestor of C and D).
+
+``` r
+plot.phylo(phy, direction = "upwards")
+nodelabels(frame = "none", col = "blue", adj = c(0.5, -0.5))
+```
+
+![](treepplr-example_files/figure-commonmark/unnamed-chunk-32-1.png)
+
+`tp_phylo_to_tpPhylo()` walks the tree from the root (node 5) down to
+the tips. Each internal node becomes a `Node` with `left`, `right` and
+`age`, and each tip becomes a `Leaf` with its `age`. Ages are computed
+from the branch lengths as time before the present, so the tips are 0,
+node 6 is 4, node 7 is 7, and the root is 10. Then `leaf_extra(i)` and
+`node_extra(i)` are called with each node’s ape number `i`, and the
+fields they return are added to the `tpPhylo` object. Using `label = i`
+gives every node its ape number as its label:
+
+``` r
+symbiont_tree <- tp_phylo_to_tpPhylo(
+  phy,
+  leaf_extra = function(i) list(label = i),
+  node_extra = function(i) list(label = i)
+)
+symbiont_tree
+```
+
+    Phylogenetic tree of class <tpPhylo>, with 4 tips and 3 internal nodes.
+
+    Rooted; includes branch lengths; root age = 10
+
+The tip labels matter as the model uses them to find each tip’s row in
+the interaction matrix. Because ape numbers the tips in the order of
+`phy$tip.label`, the rows of the interaction matrix must follow that
+same order (A, B, C, D).
+
+To keep things simple and running fast, we use three hosts, related by
+this tree:
+
+``` r
+# toy host tree
+host_phy <- ape::read.tree(text = "((H1:1,H2:1):2,H3:3);")
+
+# cophenetic distances between hosts:
+host_dist <- ape::cophenetic.phylo(host_phy)
+host_dist
+```
+
+       H1 H2 H3
+    H1  0  2  6
+    H2  2  0  6
+    H3  6  6  0
+
+The interaction matrix has one row per symbiont, in the order of
+`phy$tip.label`, and one column per host, in the same order as
+`host_dist`. It is coded 0 = non-host, 1 = potential host, 2 = actual
+host:
+
+``` r
+interactions <- matrix(
+  c(
+    2, 0, 0, # symbiont A...
+    2, 2, 0, 
+    0, 0, 2,
+    0, 2, 2 # symbiont D
+  ),
+  nrow = 4,
+  byrow = TRUE,
+  dimnames = list(phy$tip.label, colnames(host_dist))
+)
+interactions
+```
+
+      H1 H2 H3
+    A  2  0  0
+    B  2  2  0
+    C  0  0  2
+    D  0  2  2
+
+TreePPL takes both matrices as flat vectors (`Int[]` and `Real[]`), read
+row by row. R stores matrices column by column, so **we transpose before
+flattening**:
+
+``` r
+interactions_flat <- as.integer(t(interactions))
+host_dist_flat <- as.vector(t(host_dist))
+```
+
+Now, we create our named list respecting the names given above by
+`tp_expected_input()`:
+
+``` r
+L3 <- list(
+  symbiont_tree = symbiont_tree,
+  ntips = ape::Ntip(phy),
+  nhosts = ncol(interactions),
+  interactions = interactions_flat,
+  host_distances = host_dist_flat,
+  dMean = sum(host_dist[upper.tri(host_dist)]) / nrow(host_dist)
+)
+```
+
+The parameter `dMean` is the mean cophenetic distance among hosts.
+Because `host_dist` is a symmetric matrix, we only use half of it (here,
+the upper triangle) to calculate the mean distance.
+
+We can now, build the data for TreePPL using tp_data():
+
+``` r
+data_hrm <- tp_data(
+  model = "flat-root-prior-HRM",
+  data = L3,
+  print = FALSE,
+  check = TRUE
+)
+```
+
+    ── Input Check ──
+
+    JSON file:
+    '/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq//input-flat-root-prior-HRM-896d7aa.json'
+
+    Model name: flat-root-prior-HRM
+
+    ✔ All 6 arguments found: `symbiont_tree`, `ntips`, `nhosts`, `interactions`, `host_distances`, and `dMean`.
+
+And the sampler:
+
+``` r
+sampler_hrm <- tp_sampler(model = "flat-root-prior-HRM", method = "smc-apf")
+```
+
+    ── TreePPL Sampler ──
+
+    Model file:
+    '/tmp/treeppl-0.4/6yjjihgyj569rg7bw7jkqxy3z1-treeppl-0.4/lib/mcore/treeppl/models/host-repertoire-evolution/flat-root-prior-HRM.tppl'
+
+    Compile options: method = smc-apf
+
+Let’s give it a go:
+
+``` r
+hrm_res <- tp_run(
+  sampler = sampler_hrm,
+  data = data_hrm,
+  n_processes = 2,
+  sweeps = 2,
+  particles = 20
+)
+```
+
+    ── Analysis Summary ──
+
+    ✔ Completed
+
+    Elapsed time: 0.85 secs
+
+    Model: flat-root-prior-HRM
+
+    Method: smc-apf
+
+    Output directory:
+    "/private/var/folders/vh/0rc0zn655lsd4yxfvkgdk1hr0000gp/T/RtmpCd2MRq/"
+
+    Output file(s): "out.json"
+
+The output is a tidy data frame (a parser for the character histories is
+under development):
+
+``` r
+hrm_res
+```
+
+    # A tibble: 38 × 11
+       sweep particle log_weight norm_constant   norm_weight     mu   beta lambda_1
+       <int>    <int>      <dbl>         <dbl>         <dbl>  <dbl>  <dbl>    <dbl>
+     1     1        1      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     2     1        2      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     3     1        3      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     4     1        4      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     5     1        5      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     6     1        7      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     7     1        8      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     8     1        9      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+     9     1       10      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+    10     1       11      -2.94         -40.8 0.00000000911 0.0229 0.0889    0.311
+    # ℹ 28 more rows
+    # ℹ 3 more variables: lambda_2 <dbl>, lambda_3 <dbl>, lambda_4 <dbl>
+
+`lambda_1` to `lambda_4` are the relative rates of change between the
+host states (0 → 1, 1 → 0, 1 → 2 and 2 → 1) and sum to 1:
+
+| Parameter  | Change | Meaning                                            |
+|------------|--------|----------------------------------------------------|
+| `lambda_1` | 0 → 1  | a non-host becomes a potential host                |
+| `lambda_2` | 1 → 0  | a potential host is lost                           |
+| `lambda_3` | 1 → 2  | a potential host becomes an actual host            |
+| `lambda_4` | 2 → 1  | an actual host goes back to being a potential host |
+
+`mu` scales them to an overall rate, and `beta` controls how much host
+distance affects these changes.
 
 ## Qualitative trait evolution
+
+Todo.
