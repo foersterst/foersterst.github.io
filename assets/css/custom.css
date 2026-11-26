@@ -198,3 +198,7 @@ code.highlighter-rouge {
   border-radius: 4px;
 }
 
+/* ---------- Tables: no white rows ---------- */
+table tr:nth-child(2n) {
+  background-color: var(--page-col);
+}
