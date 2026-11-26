@@ -14,7 +14,6 @@ This vignette covers:
 1.  [Diversification models (CRBD)](#diversification-models-crbd)
 2.  [Tree inference (pruning)](#tree-inference-pruning)
 3.  [Host-repertoire (flat root prior)](#host-repertoire-flat-root-prior)
-4.  [Qualitative trait evolution](#qualitative-trait-evolution)
 
 > Make sure you’re using treepplr from my branch `improvements`.
 
@@ -1075,7 +1074,3 @@ host states (0 → 1, 1 → 0, 1 → 2 and 2 → 1) and sum to 1:
 
 `mu` scales them to an overall rate, and `beta` controls how much host
 distance affects these changes.
-
-## Qualitative trait evolution
-
-Todo.

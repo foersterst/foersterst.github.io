@@ -17,8 +17,7 @@ This vignette covers:
 
 1.  [Diversification models (CRBD)](#diversification-models-crbd)
 2.  [Tree inference (pruning)](#tree-inference-pruning)
-3.  [Host-repertoire (flat root prior)]
-4.  [Qualitative trait evolution]
+3.  [Host-repertoire (flat root prior)](#host-repertoire-subroot)
 
 > Make sure you're using treepplr from my branch `improvements`.
 
@@ -504,6 +503,4 @@ hrm_res
 
 `mu` scales them to an overall rate, and `beta` controls how much host distance affects these changes.
 
-## Qualitative trait evolution
-
-Todo.
+## 
