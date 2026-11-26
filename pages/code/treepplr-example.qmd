@@ -452,13 +452,13 @@ L3 <- list(
   nhosts = ncol(interactions),
   interactions = interactions_flat,
   host_distances = host_dist_flat,
-  dMean = sum(host_dist[upper.tri(host_dist)]) / nrow(host_dist)
+  dMean = mean(host_dist[upper.tri(host_dist)])
 )
 ```
 
-The parameter `dMean` is the mean cophenetic distance among hosts. Because `host_dist` is a symmetric matrix, we only use half of it (here, the upper triangle) to calculate the mean distance.
+The parameter `dMean` is the mean cophenetic distance among hosts. Because `host_dist` is a symmetric matrix, we only use half of it (here, the upper triangle without the diagonal) to calculate the mean distance.
 
-We can now, build the data for TreePPL using tp_data():
+We can now, build the data for TreePPL using `tp_data()`:
 
 ```{r}
 data_hrm <- tp_data(
